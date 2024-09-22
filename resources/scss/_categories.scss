@@ -1,0 +1,66 @@
+/* Ensure the menu item is positioned relative */
+.menu-item-has-children {
+    position: relative; /* Ensures submenu is positioned relative to this item */
+  }
+  
+  /* Ensure submenu is hidden by default */
+  .menu-item-has-children .sub-menu {
+    display: none !important; /* Hide submenu by default */
+    position: absolute;
+    background-color: $blue-color; /* Background color for submenu */
+    border: 1px solid #ddd; /* Border for submenu */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000; /* Ensure submenu is on top */
+    top: 100%; /* Position submenu directly below the parent menu item */
+    left: -50%; /* Align submenu with the left edge of the parent menu item */
+    flex-direction: row; /* Arrange items in a row */
+    white-space: nowrap; /* Prevent wrapping of submenu items */
+  }
+  
+  /* Show submenu on hover of parent menu item */
+  .menu-item-has-children:hover .sub-menu {
+    display: flex !important; /* Show submenu on hover */
+  }
+  
+  /* Style for submenu items */
+  .menu-item-has-children .sub-menu li {
+    border-bottom: none; /* Remove border for row layout */
+    margin: 0; /* Remove margin for row layout */
+  }
+  
+  /* Ensure submenu links are styled correctly */
+  .menu-item-has-children .sub-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333; /* Text color for submenu items */
+  }
+  
+  /* Specific styles for "storlekar" dropdown */
+  .menu-item-storlekar .sub-menu {
+    display: flex; /* Use flexbox for row layout */
+    flex-direction: row; /* Arrange items in a row */
+    top: 100%; /* Ensure "storlekar" submenu is positioned directly below */
+    left: 0; /* Align "storlekar" submenu with the left edge of the parent menu item */
+  }
+  
+  /* Ensure nested submenu is hidden by default */
+  .menu-item-has-children .sub-menu .sub-menu {
+    display: none !important ; /* Hide nested submenu by default */
+    position: absolute;
+    top: 100%; /* Position nested submenu directly below its parent submenu item */
+    left: 0; /* Align nested submenu with the left edge of its parent submenu item */
+    background-color: $blue-color; /* Background color for nested submenu */
+    border: 1px solid #ddd; /* Border for nested submenu */
+  }
+  
+  /* Show nested submenu on hover of parent submenu item */
+  .menu-item-has-children .sub-menu li:hover .sub-menu {
+    left: -130%;
+    display: block !important; /* Show nested submenu on hover */
+    flex-direction: row !important;
+    display: flex !important;
+  }
+  

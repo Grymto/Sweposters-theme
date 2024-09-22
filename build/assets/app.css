@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Luckiest+Guy&display=swap");@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+footer {
+  background-color: #0693e3 236, 236, 236;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border: 1px solid black;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer .container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+footer .container .flaggor {
+  width: 100%;
+  height: 100px;
+  background-repeat: repeat-x;
+  background-size: contain;
+  display: block;
+}
+footer .container .content {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 10%;
+}
+footer .container .content .column {
+  width: 20%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer .container .content .column .category-title {
+  margin-bottom: 15px;
+  font-family: "Luckiest Guy";
+  color: #000000;
+  margin-top: 25px;
+}
+footer .container .content .column nav.menu {
+  display: inline-block;
+}
+footer .container .content .column nav.menu ul {
+  padding: 0;
+}
+footer .container .content .column nav.menu ul li.Adress a {
+  text-decoration: none;
+  cursor: default;
+}
+footer .container .content .column nav.menu ul li.Adress a:hover {
+  text-decoration: none;
+}
+footer .container .content .column nav.menu ul li {
+  list-style-type: none;
+  padding: 5px 10px;
+  font-family: "Poppins";
+}
+footer .container .content .column nav.menu ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+footer .container .content .column nav.menu ul li a:hover {
+  text-decoration: underline;
+}
+footer .container .payment-methods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+  color: #000000;
+}
+footer .container .payment-methods .payment-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+footer .container .payment-methods .payment-icons img {
+  height: 60px;
+  width: auto;
+  display: block;
+  margin: 0 10px;
+}
+footer .container .payment-methods .contact-info {
+  margin-top: 50px;
+  font-size: 0.9em;
+  max-width: 960px;
+  text-align: center;
+  font-family: "Poppins";
+}
+footer .container .rights {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+  color: #000000;
+  font-family: "Poppins";
+}
+header.header {
+  background-color: #0693e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+}
+header.header * {
+  font-family: "Luckiest Guy";
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1rem;
+}
+header.header .menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header.header .menu li {
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: yellow;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+header.header .menu a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 8px 16px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+header.header .menu a:hover {
+  transform: scale(1.1);
+  color: black;
+}
+.top-header {
+  background-color: #0693e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Luckiest Guy";
+  height: 2.5rem;
+  padding-top: 1%;
+}
+.top-header .Logo {
+  font-size: 2rem;
+  color: yellow;
+}
+.top-header .Logo a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+.top-header .Logo a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ffff00;
+  left: 0;
+  bottom: -2px;
+  transition: width 0.3s ease;
+}
+.top-header .Logo a:hover::after {
+  width: 100%;
+}
+/* Ensure the menu item is positioned relative */
+.menu-item-has-children {
+  position: relative; /* Ensures submenu is positioned relative to this item */
+}
+/* Ensure submenu is hidden by default */
+.menu-item-has-children .sub-menu {
+  display: none !important; /* Hide submenu by default */
+  position: absolute;
+  background-color: #0693e3; /* Background color for submenu */
+  border: 1px solid #ddd; /* Border for submenu */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000; /* Ensure submenu is on top */
+  top: 100%; /* Position submenu directly below the parent menu item */
+  left: -50%; /* Align submenu with the left edge of the parent menu item */
+  flex-direction: row; /* Arrange items in a row */
+  white-space: nowrap; /* Prevent wrapping of submenu items */
+}
+/* Show submenu on hover of parent menu item */
+.menu-item-has-children:hover .sub-menu {
+  display: flex !important; /* Show submenu on hover */
+}
+/* Style for submenu items */
+.menu-item-has-children .sub-menu li {
+  border-bottom: none; /* Remove border for row layout */
+  margin: 0; /* Remove margin for row layout */
+}
+/* Ensure submenu links are styled correctly */
+.menu-item-has-children .sub-menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333; /* Text color for submenu items */
+}
+/* Specific styles for "storlekar" dropdown */
+.menu-item-storlekar .sub-menu {
+  display: flex; /* Use flexbox for row layout */
+  flex-direction: row; /* Arrange items in a row */
+  top: 100%; /* Ensure "storlekar" submenu is positioned directly below */
+  left: 0; /* Align "storlekar" submenu with the left edge of the parent menu item */
+}
+/* Ensure nested submenu is hidden by default */
+.menu-item-has-children .sub-menu .sub-menu {
+  display: none !important; /* Hide nested submenu by default */
+  position: absolute;
+  top: 100%; /* Position nested submenu directly below its parent submenu item */
+  left: 0; /* Align nested submenu with the left edge of its parent submenu item */
+  background-color: #0693e3; /* Background color for nested submenu */
+  border: 1px solid #ddd; /* Border for nested submenu */
+}
+/* Show nested submenu on hover of parent submenu item */
+.menu-item-has-children .sub-menu li:hover .sub-menu {
+  left: -130%;
+  display: block !important; /* Show nested submenu on hover */
+  flex-direction: row !important;
+  display: flex !important;
+}
+/* Targeting the product grid items more specifically */
+.wc-block-grid__product {
+  margin-top: 3% !important;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08); /* Enhanced shadow for depth */
+  max-width: 100%; /* Ensures the product card stays within its container */
+  width: 100%; /* Fills the available space */
+  padding: 20px; /* Adds more spacing inside the card */
+  box-sizing: border-box; /* Ensures padding is included in width calculations */
+  overflow: hidden; /* Prevents content overflow */
+  background-color: white; /* Clean background */
+  border-radius: 12px; /* Adds more rounded corners for a modern look */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth shadow and transform transition on hover */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Add hover effect for cards */
+.wc-block-grid__product:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.15); /* More pronounced shadow on hover */
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+/* Ensuring the image fits the container and has the correct width */
+.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+  border: none; /* Remove border around the image */
+  width: 100%; /* Image takes full width of the container */
+  height: auto; /* Keeps the aspect ratio */
+  display: block; /* Ensures no extra space below the image */
+  border-radius: 8px; /* Matches the card's border radius */
+  transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+/* Add subtle image zoom effect on hover */
+.wc-block-grid__product:hover .attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+/* Styling the product link */
+.wc-block-grid__product-link {
+  text-decoration: none !important;
+  font-size: 18px;
+  display: block; /* Ensures the link wraps the entire content */
+  text-align: center; /* Centers text inside the product card */
+  color: inherit; /* Keeps the text color consistent */
+}
+/* Styling the product title */
+.wc-block-grid__product-title {
+  color: #333 !important; /* Darker color for better readability */
+  margin: 15px 0 5px; /* Adjusts spacing between title and other elements */
+  font-size: 18px; /* Adjust title size slightly larger */
+  font-weight: 700; /* Makes the title stand out more */
+  text-align: center; /* Centers the product title */
+}
+/* Adjusting the product price styling */
+.wc-block-grid__product-price {
+  font-size: 16px;
+  color: #555; /* Lighter shade for the price */
+  margin-bottom: 10px;
+  text-align: center;
+}
+.wc-block-grid.has-4-columns .wc-block-grid__product {
+  flex: none !important;
+}
+.wc-block-grid__products {
+  justify-content: center;
+  flex-wrap: wrap; /* Allows products to wrap to the next line */
+  gap: 30px; /* Creates space between cards */
+}
+.wc-block-grid__product-price del {
+  color: black !important;
+  font-weight: bold;
+}
+.wc-block-grid__product-price ins {
+  color: red !important;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 3%;
+}
+.wp-block-button__link.add_to_cart_button.ajax_add_to_cart {
+  background-color: yellow;
+  border: 1px solid blue;
+  color: black;
+  font-weight: bold;
+}
+.wp-block-cover__background {
+  background-size: contain !important; /* Ensures the entire image is visible */
+  background-position: center center !important; /* Centers the image */
+  background-repeat: no-repeat !important; /* Prevents repeating the image */
+  height: 70vh; /* Adjust this value to show more or less of the image */
+}
+/* Adjusting the .wp-block-cover height */
+.wp-block-cover {
+  height: 70vh; /* Controls the height of the entire banner */
+  min-height: auto !important; /* Ensures no default min-height applies */
+}
+.has-text-align-left.has-black-color.has-text-color.has-source-serif-pro-font-family {
+  position: absolute;
+  left: 10px;
+}
+h1 {
+  font-style: italic;
+}
+.wp-block-heading.has-text-align-center {
+  margin: 0px;
+  font-size: 40px;
+  margin-top: 2%;
+}
+body {
+  margin: 0;
+  background-color: #edeec7;
+  overflow-x: hidden;
+}

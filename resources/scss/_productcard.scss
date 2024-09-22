@@ -1,0 +1,99 @@
+/* Targeting the product grid items more specifically */
+.wc-block-grid__product {
+    margin-top: 3% !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08); /* Enhanced shadow for depth */
+    max-width: 100%; /* Ensures the product card stays within its container */
+    width: 100%; /* Fills the available space */
+    padding: 20px; /* Adds more spacing inside the card */
+    box-sizing: border-box; /* Ensures padding is included in width calculations */
+    overflow: hidden; /* Prevents content overflow */
+    background-color: white; /* Clean background */
+    border-radius: 12px; /* Adds more rounded corners for a modern look */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth shadow and transform transition on hover */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Add hover effect for cards */
+.wc-block-grid__product:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.15); /* More pronounced shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Ensuring the image fits the container and has the correct width */
+.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+    border: none; /* Remove border around the image */
+    width: 100%; /* Image takes full width of the container */
+    height: auto; /* Keeps the aspect ratio */
+    display: block; /* Ensures no extra space below the image */
+    border-radius: 8px; /* Matches the card's border radius */
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+
+/* Add subtle image zoom effect on hover */
+.wc-block-grid__product:hover .attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Styling the product link */
+.wc-block-grid__product-link {
+    text-decoration: none !important;
+    font-size: 18px;
+    display: block; /* Ensures the link wraps the entire content */
+    text-align: center; /* Centers text inside the product card */
+    color: inherit; /* Keeps the text color consistent */
+}
+
+/* Styling the product title */
+.wc-block-grid__product-title {
+    color: #333 !important; /* Darker color for better readability */
+    margin: 15px 0 5px; /* Adjusts spacing between title and other elements */
+    font-size: 18px; /* Adjust title size slightly larger */
+    font-weight: 700; /* Makes the title stand out more */
+    text-align: center; /* Centers the product title */
+}
+
+/* Adjusting the product price styling */
+.wc-block-grid__product-price {
+    font-size: 16px;
+    color: #555; /* Lighter shade for the price */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.wc-block-grid.has-4-columns .wc-block-grid__product{
+    flex: none !important;
+}
+.wc-block-grid__products{
+    justify-content: center;
+    flex-wrap: wrap; /* Allows products to wrap to the next line */
+    gap: 30px; /* Creates space between cards */
+}
+
+//Price
+
+.wc-block-grid__product-price del{
+    color: black !important;
+    font-weight: bold;
+}
+
+.wc-block-grid__product-price ins{
+    color: red !important;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 3%;
+    
+}
+
+//sale tag
+.wc-block-grid__product-onsale{}
+
+//buttons
+
+.wp-block-button__link.add_to_cart_button.ajax_add_to_cart{
+    background-color: yellow;
+    border: 1px solid blue;
+    color: black;
+    font-weight: bold;
+}

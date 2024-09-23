@@ -1,86 +1,111 @@
-header.header {
-  * {
-    font-family: $main-title-font;
-    color: black;
-    text-decoration: none;
-    list-style: none;
-    font-size: 1rem;
-  }
-
-  background-color: #0693e3;
-  display: flex;
-  justify-content: center;   // Horizontally centers the content in the header
-  align-items: center;       // Vertically centers the content in the header
-  height: 70px;           // Set a height to ensure vertical centering works
-  width: 100%;
-  .menu {
-    ul {
-      display: flex;
-      justify-content: center;  // Horizontally centers the menu items
-      align-items: center;      // Vertically centers the menu items
-      margin: 0;                // Remove any default margin
-      padding: 0;               // Remove any default padding
-      list-style: none;         // Ensure there's no list-style in case it's overridden elsewhere
-    }
-
-    li {
-      margin: 0 1rem;           // Adds spacing between menu items (adjust as needed)
-      display: flex;
-      align-items: center;      // Vertically centers content within the list items
-      padding: 0.2rem 0.5rem;     // Adds padding inside each menu item
-      border: 1px solid black;  // Adds a solid black border
-      border-radius: 10px;      // Smoothens the corners with a slight radius
-      background-color: yellow; // Sets the background color to yellow
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); // Adds a subtle shadow for depth
-    }
-
-    a {
-      text-decoration: none;
-      color: black;                  // Ensures the links are black
-      display: block;
-      padding: 8px 16px;             // Adds padding around the links for a clickable area
-      transition: transform 0.3s ease, color 0.3s ease; // Smooth zoom effect on hover
-    }
-    
-    a:hover {
-      transform: scale(1.1);         // Zoom in slightly (adjust the value for desired effect)
-      color: black;                 // Change text color on hover
-    }
-  }
-
-}
 .top-header {
   background-color: #0693e3;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: $main-title-font;
-  height: 2.5rem;
-  padding-top: 1%;
+  height: 5rem;            /* Keep it in rem for flexibility */
+  padding: 0 1.5rem;         /* Added horizontal padding for space around the content */
+  width: 100%;                /* Full width */
+  z-index: 9999;              /* Keep it above other elements */
+  position: fixed;            /* Ensures the top-header is fixed */
+  top: 32px;                  /* Adjust this to be below the admin bar */
+}
 
-  .Logo {
-    font-size: 2rem;
-    color: yellow;
+header.header {
+  position: fixed;            /* Keeps the header fixed */
+  top: calc(5rem + 32px);  /* Adjusts for the top-header height and admin bar */
+  left: 0;                    /* Aligns it with the left edge */
+  width: 100%;                /* Ensures the header spans the full width */
+  z-index: 9998;              /* Slightly below the top-header but still above content */
+  background-color: #0693e3;
+  display: flex;
+  justify-content: center;    /* Centers content horizontally */
+  align-items: center;        /* Vertically centers the content */
+  height: 65px;               /* Increased height for more vertical space */
+  padding: 0 2rem;            /* Added horizontal padding for space around the content */
+  
+  .menu {
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      margin: 0 1.5rem;        /* Increased spacing between menu items */
+      display: flex;
+      align-items: center;
+      padding: 0.4rem 0.8rem;  /* Increased padding inside menu items */
+      border: 1px solid black;
+      border-radius: 10px;
+      background-color: yellow;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
 
     a {
       text-decoration: none;
-      color: inherit;
-      position: relative;      // Set the position to relative for the pseudo-element
+      color: black;
+      display: block;
+      padding: 10px 20px;      /* Increased padding around links for better visibility */
+      transition: transform 0.3s ease, color 0.3s ease;
     }
 
-    a::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;              // The height of the underline
-      background-color: #ffff00; // Underline color
-      left: 0;
-      bottom: -2px;             // Position the underline just below the text
-      transition: width 0.3s ease;  // Smooth transition for the underline width
+    a:hover {
+      transform: scale(1.1);
+      color: black;
     }
+  }
+}
 
-    a:hover::after {
-      width: 100%;              // Expands the underline to full width on hover
-    }
+.top-header .Logo {
+  font-size: 2.5rem;           /* Increased logo size for better visibility */
+  color: yellow;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+  }
+
+  a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ffff00;
+    left: 0;
+    bottom: -2px;
+    transition: width 0.3s ease;
+  }
+
+  a:hover::after {
+    width: 100%;
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .top-header {
+    height: 3rem;  /* Adjust height for smaller screens */
+    padding: 0 1rem; /* Adjust padding */
+    top: 64px; /* Ensure it accounts for admin bar */
+  }
+
+  header.header {
+    height: 60px;   /* Adjust header height for smaller screens */
+    padding: 0 1rem; /* Adjust padding */
+    top: calc(3rem + 64px); /* Adjust for the smaller top-header */
+  }
+
+  .top-header .Logo {
+    font-size: 2rem; /* Smaller logo size */
+  }
+
+  .menu li {
+    margin: 0 1rem; /* Adjust spacing between menu items */
   }
 }

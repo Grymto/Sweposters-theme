@@ -92,8 +92,16 @@
 //buttons
 
 .wp-block-button__link.add_to_cart_button.ajax_add_to_cart{
-    background-color: yellow;
-    border: 1px solid blue;
+    background-color: rgb(143, 214, 255);
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
+    font-weight: bold;
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.wp-block-button__link.add_to_cart_button.ajax_add_to_cart:hover{
+    background-color: rgb(101, 231, 101);
+    border: 1px solid rgb(0, 0, 0);
     color: black;
     font-weight: bold;
 }

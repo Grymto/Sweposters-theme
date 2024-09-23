@@ -2,7 +2,7 @@
 
 
 footer {
-  background-color: #0693e3 236, 236, 236;
+  background-color: #0693e3;
   padding: 0;
   margin: 0;
   width: 100%;
@@ -43,37 +43,49 @@ footer .container .content .column {
   margin-bottom: 20px;
 }
 footer .container .content .column .category-title {
-  margin-bottom: 15px;
   font-family: "Luckiest Guy";
-  color: #000000;
-  margin-top: 25px;
+  margin: 0 1rem; /* Adds spacing between menu items */
+  padding: 0.75rem 0.75rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: yellow;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
 }
 footer .container .content .column nav.menu {
   display: inline-block;
 }
 footer .container .content .column nav.menu ul {
+  justify-content: center; /* Horizontally centers the menu items */
+  align-items: center; /* Vertically centers the menu items */
+  margin: 0;
   padding: 0;
+  list-style: none; /* Removes default list styling */
+}
+footer .container .content .column nav.menu ul li {
+  margin-bottom: 15px;
+  font-family: "Luckiest Guy";
+  color: #000000;
+  margin-top: 25px; /* Adds subtle shadow for depth */
+}
+footer .container .content .column nav.menu ul li a {
+  text-decoration: none;
+  color: black; /* Ensures link text is black */
+  display: block;
+  padding: 8px 16px; /* Adds padding for clickable area */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+footer .container .content .column nav.menu ul li a:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+  color: yellow; /* Ensures the color stays black on hover */
 }
 footer .container .content .column nav.menu ul li.Adress a {
-  text-decoration: none;
-  cursor: default;
+  cursor: default; /* Disables pointer on hover for address items */
 }
 footer .container .content .column nav.menu ul li.Adress a:hover {
   text-decoration: none;
 }
-footer .container .content .column nav.menu ul li {
-  list-style-type: none;
-  padding: 5px 10px;
-  font-family: "Poppins";
-}
-footer .container .content .column nav.menu ul li a {
-  color: #000000;
-  text-decoration: none;
-}
-footer .container .content .column nav.menu ul li a:hover {
-  text-decoration: underline;
-}
-footer .container .payment-methods {
+footer .payment-methods {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,7 +95,7 @@ footer .container .payment-methods {
   padding: 20px 0;
   color: #000000;
 }
-footer .container .payment-methods .payment-icons {
+footer .payment-methods .payment-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -91,20 +103,20 @@ footer .container .payment-methods .payment-icons {
   max-width: 960px;
   margin: 0 auto;
 }
-footer .container .payment-methods .payment-icons img {
+footer .payment-methods .payment-icons img {
   height: 60px;
   width: auto;
   display: block;
   margin: 0 10px;
 }
-footer .container .payment-methods .contact-info {
+footer .payment-methods .contact-info {
   margin-top: 50px;
   font-size: 0.9em;
   max-width: 960px;
   text-align: center;
   font-family: "Poppins";
 }
-footer .container .rights {
+footer .rights {
   display: flex;
   justify-content: center;
   margin-top: 10px;
@@ -113,20 +125,31 @@ footer .container .rights {
   color: #000000;
   font-family: "Poppins";
 }
-header.header {
+.top-header {
   background-color: #0693e3;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
-  width: 100%;
-}
-header.header * {
   font-family: "Luckiest Guy";
-  color: black;
-  text-decoration: none;
-  list-style: none;
-  font-size: 1rem;
+  height: 5rem; /* Keep it in rem for flexibility */
+  padding: 0 1.5rem; /* Added horizontal padding for space around the content */
+  width: 100%; /* Full width */
+  z-index: 9999; /* Keep it above other elements */
+  position: fixed; /* Ensures the top-header is fixed */
+  top: 32px; /* Adjust this to be below the admin bar */
+}
+header.header {
+  position: fixed; /* Keeps the header fixed */
+  top: calc(5rem + 32px); /* Adjusts for the top-header height and admin bar */
+  left: 0; /* Aligns it with the left edge */
+  width: 100%; /* Ensures the header spans the full width */
+  z-index: 9998; /* Slightly below the top-header but still above content */
+  background-color: #0693e3;
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Vertically centers the content */
+  height: 65px; /* Increased height for more vertical space */
+  padding: 0 2rem; /* Added horizontal padding for space around the content */
 }
 header.header .menu ul {
   display: flex;
@@ -137,10 +160,10 @@ header.header .menu ul {
   list-style: none;
 }
 header.header .menu li {
-  margin: 0 1rem;
+  margin: 0 1.5rem; /* Increased spacing between menu items */
   display: flex;
   align-items: center;
-  padding: 0.2rem 0.5rem;
+  padding: 0.4rem 0.8rem; /* Increased padding inside menu items */
   border: 1px solid black;
   border-radius: 10px;
   background-color: yellow;
@@ -150,24 +173,15 @@ header.header .menu a {
   text-decoration: none;
   color: black;
   display: block;
-  padding: 8px 16px;
+  padding: 10px 20px; /* Increased padding around links for better visibility */
   transition: transform 0.3s ease, color 0.3s ease;
 }
 header.header .menu a:hover {
   transform: scale(1.1);
   color: black;
 }
-.top-header {
-  background-color: #0693e3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Luckiest Guy";
-  height: 2.5rem;
-  padding-top: 1%;
-}
 .top-header .Logo {
-  font-size: 2rem;
+  font-size: 2.5rem; /* Increased logo size for better visibility */
   color: yellow;
 }
 .top-header .Logo a {
@@ -187,6 +201,25 @@ header.header .menu a:hover {
 }
 .top-header .Logo a:hover::after {
   width: 100%;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .top-header {
+    height: 3rem; /* Adjust height for smaller screens */
+    padding: 0 1rem; /* Adjust padding */
+    top: 64px; /* Ensure it accounts for admin bar */
+  }
+  header.header {
+    height: 60px; /* Adjust header height for smaller screens */
+    padding: 0 1rem; /* Adjust padding */
+    top: calc(3rem + 64px); /* Adjust for the smaller top-header */
+  }
+  .top-header .Logo {
+    font-size: 2rem; /* Smaller logo size */
+  }
+  .menu li {
+    margin: 0 1rem; /* Adjust spacing between menu items */
+  }
 }
 /* Ensure the menu item is positioned relative */
 .menu-item-has-children {
@@ -322,8 +355,15 @@ header.header .menu a:hover {
   margin-left: 3%;
 }
 .wp-block-button__link.add_to_cart_button.ajax_add_to_cart {
-  background-color: yellow;
-  border: 1px solid blue;
+  background-color: rgb(143, 214, 255);
+  border: 1px solid rgb(0, 0, 0);
+  color: black;
+  font-weight: bold;
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+.wp-block-button__link.add_to_cart_button.ajax_add_to_cart:hover {
+  background-color: rgb(101, 231, 101);
+  border: 1px solid rgb(0, 0, 0);
   color: black;
   font-weight: bold;
 }
@@ -341,6 +381,7 @@ header.header .menu a:hover {
 .has-text-align-left.has-black-color.has-text-color.has-source-serif-pro-font-family {
   position: absolute;
   left: 10px;
+  top: 100px;
 }
 h1 {
   font-style: italic;
@@ -352,6 +393,6 @@ h1 {
 }
 body {
   margin: 0;
-  background-color: #edeec7;
+  background-color: rgb(234, 234, 234);
   overflow-x: hidden;
 }

@@ -1,22 +1,37 @@
-
-// banner img
+/* Banner image background */
 .wp-block-cover__background {
     background-size: contain !important; /* Ensures the entire image is visible */
     background-position: center center !important; /* Centers the image */
     background-repeat: no-repeat !important; /* Prevents repeating the image */
-    height: 70vh; /* Adjust this value to show more or less of the image */
+    height: calc(70vh - 145px); /* Subtract the total header height from the banner */
 }
 
 /* Adjusting the .wp-block-cover height */
 .wp-block-cover {
-    height: 70vh; /* Controls the height of the entire banner */
+    padding-top: 145px; /* Adds space for the header */
+    height: calc(70vh - 145px); /* Adjusts height based on header size */
     min-height: auto !important; /* Ensures no default min-height applies */
 }
 
-// banner img text
-
-.has-text-align-left.has-black-color.has-text-color.has-source-serif-pro-font-family{
+/* Banner text styling */
+.has-text-align-left.has-black-color.has-text-color.has-source-serif-pro-font-family {
     position: absolute;
     left: 10px;
-    top: 100px ;
+    top: calc(100px + 145px); /* Adjusts text position to account for the header */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .wp-block-cover__background {
+        height: calc(70vh - (3rem + 60px + 64px)); /* Adjusts the height for smaller screens */
+    }
+
+    .wp-block-cover {
+        padding-top: calc(3rem + 60px + 64px); /* Adjusts the padding based on smaller header sizes */
+        height: calc(70vh - (3rem + 60px + 64px)); /* Adjusts the height for the banner */
+    }
+
+    .has-text-align-left.has-black-color.has-text-color.has-source-serif-pro-font-family {
+        top: calc(100px + (3rem + 60px + 64px)); /* Adjusts text position for smaller screens */
+    }
 }

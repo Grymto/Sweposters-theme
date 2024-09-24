@@ -400,7 +400,7 @@ header.header .menu a:hover {
   }
 }
 .wp-block-cover.alignfull.is-light.has-custom-content-position.is-position-top-left {
-  margin-top: 8%;
+  margin-top: 8% !important;
 }
 h1 {
   font-style: italic;

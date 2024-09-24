@@ -36,6 +36,7 @@ header.header {
     }
 
     li {
+      font-family: $main-title-font;
       margin: 0 1.5rem;        /* Increased spacing between menu items */
       display: flex;
       align-items: center;

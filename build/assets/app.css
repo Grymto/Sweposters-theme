@@ -160,6 +160,7 @@ header.header .menu ul {
   list-style: none;
 }
 header.header .menu li {
+  font-family: "Luckiest Guy";
   margin: 0 1.5rem; /* Increased spacing between menu items */
   display: flex;
   align-items: center;

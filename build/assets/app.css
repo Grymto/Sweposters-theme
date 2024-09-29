@@ -131,25 +131,25 @@ footer .rights {
   justify-content: center;
   align-items: center;
   font-family: "Luckiest Guy";
-  height: 5rem; /* Keep it in rem for flexibility */
-  padding: 0 1.5rem; /* Added horizontal padding for space around the content */
-  width: 100%; /* Full width */
-  z-index: 9999; /* Keep it above other elements */
-  position: fixed; /* Ensures the top-header is fixed */
-  top: 32px; /* Adjust this to be below the admin bar */
+  height: 5rem; /* Adjust for top-header height */
+  padding: 0 1.5rem;
+  width: 100%;
+  z-index: 9999;
+  position: fixed;
+  top: 32px; /* Account for admin bar */
 }
 header.header {
-  position: fixed; /* Keeps the header fixed */
-  top: calc(5rem + 32px); /* Adjusts for the top-header height and admin bar */
-  left: 0; /* Aligns it with the left edge */
-  width: 100%; /* Ensures the header spans the full width */
-  z-index: 9998; /* Slightly below the top-header but still above content */
+  position: fixed;
+  top: calc(5rem + 32px); /* Adjusts for top-header and admin bar */
+  left: 0;
+  width: 100%;
+  z-index: 9998;
   background-color: #0693e3;
   display: flex;
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Vertically centers the content */
-  height: 65px; /* Increased height for more vertical space */
-  padding: 0 2rem; /* Added horizontal padding for space around the content */
+  justify-content: center;
+  align-items: center;
+  height: 65px; /* Adjust header height */
+  padding: 0 2rem;
 }
 header.header .menu ul {
   display: flex;
@@ -161,10 +161,10 @@ header.header .menu ul {
 }
 header.header .menu li {
   font-family: "Luckiest Guy";
-  margin: 0 1.5rem; /* Increased spacing between menu items */
+  margin: 0 1.5rem;
   display: flex;
   align-items: center;
-  padding: 0.4rem 0.8rem; /* Increased padding inside menu items */
+  padding: 0.4rem 0.8rem;
   border: 1px solid black;
   border-radius: 10px;
   background-color: yellow;
@@ -173,8 +173,7 @@ header.header .menu li {
 header.header .menu a {
   text-decoration: none;
   color: black;
-  display: block;
-  padding: 10px 20px; /* Increased padding around links for better visibility */
+  padding: 10px 20px;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 header.header .menu a:hover {
@@ -182,7 +181,7 @@ header.header .menu a:hover {
   color: black;
 }
 .top-header .Logo {
-  font-size: 2.5rem; /* Increased logo size for better visibility */
+  font-size: 2.5rem;
   color: yellow;
 }
 .top-header .Logo a {
@@ -206,20 +205,20 @@ header.header .menu a:hover {
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .top-header {
-    height: 3rem; /* Adjust height for smaller screens */
-    padding: 0 1rem; /* Adjust padding */
-    top: 64px; /* Ensure it accounts for admin bar */
+    height: 3rem;
+    padding: 0 1rem;
+    top: 64px; /* Adjust for admin bar on small screens */
   }
   header.header {
-    height: 60px; /* Adjust header height for smaller screens */
-    padding: 0 1rem; /* Adjust padding */
-    top: calc(3rem + 64px); /* Adjust for the smaller top-header */
+    height: 60px;
+    padding: 0 1rem;
+    top: calc(3rem + 64px); /* Adjust for smaller top-header */
   }
   .top-header .Logo {
-    font-size: 2rem; /* Smaller logo size */
+    font-size: 2rem;
   }
   .menu li {
-    margin: 0 1rem; /* Adjust spacing between menu items */
+    margin: 0 1rem;
   }
 }
 /* Ensure the menu item is positioned relative */
@@ -373,35 +372,36 @@ header.header .menu a:hover {
   background-size: contain !important; /* Ensures the entire image is visible */
   background-position: center center !important; /* Centers the image */
   background-repeat: no-repeat !important; /* Prevents repeating the image */
-  height: calc(70vh - 145px); /* Subtract the total header height from the banner */
+  height: 70vh; /* Keep the banner full height without subtracting the header */
 }
 /* Adjusting the .wp-block-cover height */
 .wp-block-cover {
-  padding-top: 145px; /* Adds space for the header */
-  height: calc(70vh - 145px); /* Adjusts height based on header size */
+  padding-top: 0; /* Remove padding to avoid a gap */
+  height: 70vh; /* Keep full height without subtracting the header */
   min-height: auto !important; /* Ensures no default min-height applies */
 }
 /* Banner text styling */
 .has-text-align-left.has-black-color.has-text-color.has-source-serif-pro-font-family {
   position: absolute;
   left: 10px;
-  top: 245px; /* Adjusts text position to account for the header */
+  top: 100px; /* Adjust based on the header height */
 }
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
   .wp-block-cover__background {
-    height: calc(70vh - (3rem + 60px + 64px)); /* Adjusts the height for smaller screens */
+    height: 70vh; /* Keep height for smaller screens */
   }
   .wp-block-cover {
-    padding-top: calc(3rem + 60px + 64px); /* Adjusts the padding based on smaller header sizes */
-    height: calc(70vh - (3rem + 60px + 64px)); /* Adjusts the height for the banner */
+    padding-top: 0; /* Remove padding for smaller screens */
+    height: 70vh; /* Full height for the banner */
   }
   .has-text-align-left.has-black-color.has-text-color.has-source-serif-pro-font-family {
-    top: calc(100px + 3rem + 60px + 64px); /* Adjusts text position for smaller screens */
+    top: 100px; /* Adjust text position for smaller screens */
   }
 }
+/* Remove unnecessary margin */
 .wp-block-cover.alignfull.is-light.has-custom-content-position.is-position-top-left {
-  margin-top: 8% !important;
+  margin-top: 0 !important; /* Remove margin to eliminate the gap */
 }
 h1 {
   font-style: italic;
@@ -411,8 +411,177 @@ h1 {
   font-size: 40px;
   margin-top: 2%;
 }
+#sidebar {
+  display: none;
+}
+.woocommerce-products-header__title.page-title {
+  text-align: center; /* Centers the text horizontally */
+  margin: 0 auto; /* Ensures it has auto margins to center in its parent container */
+  width: 100%; /* Ensures the title takes the full width of its parent */
+}
+/* Adding padding to the left and right of the product grid */
+.wc-block-grid,
+ul.products {
+  padding-left: 10% !important; /* Adjust the value as needed */
+  padding-right: 10% !important; /* Adjust the value as needed */
+}
+.wc-block-grid__product,
+ul.products li.product {
+  margin-top: 3% !important; /* Space above each product */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08); /* Enhanced shadow for depth */
+  max-width: 100%; /* Ensures the product card stays within its container */
+  width: 100%; /* Fills the available space */
+  padding: 20px; /* Adds more spacing inside the card */
+  box-sizing: border-box; /* Ensures padding is included in width calculations */
+  overflow: hidden; /* Prevents content overflow */
+  background-color: white; /* Clean background */
+  border-radius: 12px; /* Adds more rounded corners for a modern look */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth shadow and transform transition on hover */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers all items inside the product card */
+}
+/* Add hover effect for cards */
+.wc-block-grid__product:hover,
+ul.products li.product:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.15); /* More pronounced shadow on hover */
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+/* Ensuring the image fits the container and has the correct width */
+.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+  border: none; /* Remove border around the image */
+  width: 100%; /* Image takes full width of the container */
+  height: auto; /* Keeps the aspect ratio */
+  display: block; /* Ensures no extra space below the image */
+  border-radius: 8px; /* Matches the card's border radius */
+  transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+}
+/* Add subtle image zoom effect on hover */
+.wc-block-grid__product:hover .attachment-woocommerce_thumbnail.size-woocommerce_thumbnail,
+ul.products li.product:hover .attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+/* Styling the product link */
+.wc-block-grid__product-link,
+.woocommerce-LoopProduct-link {
+  text-decoration: none !important;
+  font-size: 18px;
+  display: block; /* Ensures the link wraps the entire content */
+  text-align: center; /* Centers text inside the product card */
+  color: inherit; /* Keeps the text color consistent */
+}
+/* Styling the product title */
+.wc-block-grid__product-title,
+.woocommerce-loop-product__title {
+  color: #333 !important; /* Darker color for better readability */
+  margin: 15px 0 5px; /* Adjusts spacing between title and other elements */
+  font-size: 18px; /* Adjust title size slightly larger */
+  font-weight: 700; /* Makes the title stand out more */
+  text-align: center; /* Centers the product title */
+}
+/* Adjusting the product price styling */
+.wc-block-grid__product-price,
+.woocommerce-loop-product__price {
+  font-size: 16px;
+  color: #000000; /* Lighter shade for the price */
+  margin-bottom: 10px;
+  text-align: center; /* Center the product price */
+}
+/* Ensuring proper grid layout */
+.wc-block-grid.has-4-columns,
+.wc-block-grid__products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows products to wrap to the next line */
+  gap: 30px; /* Creates space between cards */
+}
+/* Adjusting the product price styling */
+.price {
+  font-size: 16px; /* Font size for the price */
+  color: #000000; /* Lighter shade for the price */
+  margin-bottom: 10px; /* Space below the price */
+  text-align: center; /* Center the price text */
+}
+/* For sale prices */
+.price del {
+  color: black !important; /* Original price in black */
+  font-weight: bold; /* Make the original price bold */
+}
+.price ins {
+  color: red !important; /* Sale price in red */
+  text-decoration: none; /* No underline on sale price */
+  font-weight: bold; /* Make the sale price bold */
+  margin-left: 3%; /* Space to the left of the sale price */
+}
+/* Sale sticker styling for consistency across all product cards */
+.woocommerce ul.products li.product .onsale {
+  background: #fff; /* White background */
+  border: 1px solid #43454b; /* Dark border */
+  border-radius: 4px; /* Slightly rounded corners */
+  color: #43454b; /* Dark text color */
+  display: inline-block; /* Inline-block for proper sizing */
+  font-size: 0.875em; /* Font size */
+  font-weight: 600; /* Semi-bold text */
+  padding: 0.25em 0.75em; /* Padding around the text */
+  position: absolute; /* Position for overlay */
+  top: 4px; /* Position from the top */
+  right: 4px; /* Position from the right */
+  left: auto; /* Reset left position */
+  margin: 0; /* Remove default margin */
+  text-align: center; /* Center the text */
+  text-transform: uppercase; /* Uppercase text */
+  z-index: 9; /* Ensure it appears above other elements */
+}
+/* Ensuring the product card has relative positioning for proper alignment */
+.wc-block-grid__product,
+ul.products li.product {
+  position: relative; /* Required for absolute positioning of the sale sticker */
+}
+.woocommerce span.onsale {
+  min-width: auto !important; /* Removes the minimum width */
+  min-height: auto !important; /* Removes the minimum height */
+  line-height: normal !important; /* Sets the line height to normal */
+  /* Optional: Add additional styling if needed */
+  display: inline-block; /* Makes sure the sale badge behaves like an inline-block */
+  padding: 0.25em 0.5em; /* Adjust padding for better visibility */
+  background-color: #fff; /* Background color */
+  color: #43454b; /* Text color */
+  border: 1px solid #43454b; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 0.875em; /* Font size */
+  font-weight: 600; /* Font weight */
+  text-transform: uppercase; /* Uppercase text */
+  position: absolute; /* Ensure it's positioned correctly */
+  right: 4px; /* Positioning adjustments */
+  top: 4px; /* Positioning adjustments */
+}
+/* Buttons */
+.wp-block-button__link.add_to_cart_button.ajax_add_to_cart,
+ul.products li.product .button {
+  background-color: rgb(143, 214, 255);
+  border: 1px solid rgb(0, 0, 0);
+  color: black;
+  font-weight: bold;
+  transform: scale(1.05); /* Slight zoom on hover */
+  padding: 10px 15px; /* Padding for buttons */
+  border-radius: 8px; /* Rounded corners */
+  display: inline-block; /* Ensure button behaves like an inline-block */
+  margin-top: auto; /* Pushes the button to the bottom of the product card */
+}
+/* Add space between the button and the bottom of the card */
+ul.products li.product .button {
+  margin-bottom: 20px; /* Adjust this value for desired spacing */
+}
+.wp-block-button__link.add_to_cart_button.ajax_add_to_cart:hover,
+ul.products li.product .button:hover {
+  background-color: rgb(101, 231, 101);
+  border: 1px solid rgb(0, 0, 0);
+  color: black;
+  font-weight: bold;
+}
 body {
   margin: 0;
   background-color: rgb(234, 234, 234);
   overflow-x: hidden;
+  padding-top: calc(4.5rem + 80px); /* Adjust this to match the combined height of your top-header and header */
 }

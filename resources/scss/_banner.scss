@@ -3,13 +3,13 @@
     background-size: contain !important; /* Ensures the entire image is visible */
     background-position: center center !important; /* Centers the image */
     background-repeat: no-repeat !important; /* Prevents repeating the image */
-    height: calc(70vh - 145px); /* Subtract the total header height from the banner */
+    height: 70vh; /* Keep the banner full height without subtracting the header */
 }
 
 /* Adjusting the .wp-block-cover height */
 .wp-block-cover {
-    padding-top: 145px; /* Adds space for the header */
-    height: calc(70vh - 145px); /* Adjusts height based on header size */
+    padding-top: 0; /* Remove padding to avoid a gap */
+    height: 70vh; /* Keep full height without subtracting the header */
     min-height: auto !important; /* Ensures no default min-height applies */
 }
 
@@ -17,25 +17,26 @@
 .has-text-align-left.has-black-color.has-text-color.has-source-serif-pro-font-family {
     position: absolute;
     left: 10px;
-    top: calc(100px + 145px); /* Adjusts text position to account for the header */
+    top: 100px; /* Adjust based on the header height */
 }
 
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
     .wp-block-cover__background {
-        height: calc(70vh - (3rem + 60px + 64px)); /* Adjusts the height for smaller screens */
+        height: 70vh; /* Keep height for smaller screens */
     }
 
     .wp-block-cover {
-        padding-top: calc(3rem + 60px + 64px); /* Adjusts the padding based on smaller header sizes */
-        height: calc(70vh - (3rem + 60px + 64px)); /* Adjusts the height for the banner */
+        padding-top: 0; /* Remove padding for smaller screens */
+        height: 70vh; /* Full height for the banner */
     }
 
     .has-text-align-left.has-black-color.has-text-color.has-source-serif-pro-font-family {
-        top: calc(100px + (3rem + 60px + 64px)); /* Adjusts text position for smaller screens */
+        top: 100px; /* Adjust text position for smaller screens */
     }
 }
 
-.wp-block-cover.alignfull.is-light.has-custom-content-position.is-position-top-left{
-        margin-top: 8% !important;
-    }
+/* Remove unnecessary margin */
+.wp-block-cover.alignfull.is-light.has-custom-content-position.is-position-top-left {
+    margin-top: 0 !important; /* Remove margin to eliminate the gap */
+}

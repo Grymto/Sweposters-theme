@@ -9,3 +9,12 @@ h1{
     font-size: 40px;
     margin-top: 2%;
 }
+
+#sidebar{
+    display: none;
+}
+.woocommerce-products-header__title.page-title {
+    text-align: center; /* Centers the text horizontally */
+    margin: 0 auto; /* Ensures it has auto margins to center in its parent container */
+    width: 100%; /* Ensures the title takes the full width of its parent */
+}

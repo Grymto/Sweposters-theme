@@ -1,30 +1,31 @@
+
 .top-header {
   background-color: #0693e3;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: $main-title-font;
-  height: 5rem;            /* Keep it in rem for flexibility */
-  padding: 0 1.5rem;         /* Added horizontal padding for space around the content */
-  width: 100%;                /* Full width */
-  z-index: 9999;              /* Keep it above other elements */
-  position: fixed;            /* Ensures the top-header is fixed */
-  top: 32px;                  /* Adjust this to be below the admin bar */
+  height: 5rem;  /* Adjust for top-header height */
+  padding: 0 1.5rem;
+  width: 100%;
+  z-index: 9999;
+  position: fixed;
+  top: 32px;  /* Account for admin bar */
 }
 
 header.header {
-  position: fixed;            /* Keeps the header fixed */
-  top: calc(5rem + 32px);  /* Adjusts for the top-header height and admin bar */
-  left: 0;                    /* Aligns it with the left edge */
-  width: 100%;                /* Ensures the header spans the full width */
-  z-index: 9998;              /* Slightly below the top-header but still above content */
+  position: fixed;
+  top: calc(5rem + 32px);  /* Adjusts for top-header and admin bar */
+  left: 0;
+  width: 100%;
+  z-index: 9998;
   background-color: #0693e3;
   display: flex;
-  justify-content: center;    /* Centers content horizontally */
-  align-items: center;        /* Vertically centers the content */
-  height: 65px;               /* Increased height for more vertical space */
-  padding: 0 2rem;            /* Added horizontal padding for space around the content */
-  
+  justify-content: center;
+  align-items: center;
+  height: 65px;  /* Adjust header height */
+  padding: 0 2rem;
+
   .menu {
     ul {
       display: flex;
@@ -37,10 +38,10 @@ header.header {
 
     li {
       font-family: $main-title-font;
-      margin: 0 1.5rem;        /* Increased spacing between menu items */
+      margin: 0 1.5rem;
       display: flex;
       align-items: center;
-      padding: 0.4rem 0.8rem;  /* Increased padding inside menu items */
+      padding: 0.4rem 0.8rem;
       border: 1px solid black;
       border-radius: 10px;
       background-color: yellow;
@@ -50,8 +51,7 @@ header.header {
     a {
       text-decoration: none;
       color: black;
-      display: block;
-      padding: 10px 20px;      /* Increased padding around links for better visibility */
+      padding: 10px 20px;
       transition: transform 0.3s ease, color 0.3s ease;
     }
 
@@ -63,7 +63,7 @@ header.header {
 }
 
 .top-header .Logo {
-  font-size: 2.5rem;           /* Increased logo size for better visibility */
+  font-size: 2.5rem;
   color: yellow;
 
   a {
@@ -91,22 +91,22 @@ header.header {
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .top-header {
-    height: 3rem;  /* Adjust height for smaller screens */
-    padding: 0 1rem; /* Adjust padding */
-    top: 64px; /* Ensure it accounts for admin bar */
+    height: 3rem;
+    padding: 0 1rem;
+    top: 64px;  /* Adjust for admin bar on small screens */
   }
 
   header.header {
-    height: 60px;   /* Adjust header height for smaller screens */
-    padding: 0 1rem; /* Adjust padding */
-    top: calc(3rem + 64px); /* Adjust for the smaller top-header */
+    height: 60px;
+    padding: 0 1rem;
+    top: calc(3rem + 64px);  /* Adjust for smaller top-header */
   }
 
   .top-header .Logo {
-    font-size: 2rem; /* Smaller logo size */
+    font-size: 2rem;
   }
 
   .menu li {
-    margin: 0 1rem; /* Adjust spacing between menu items */
+    margin: 0 1rem;
   }
 }

@@ -1,0 +1,133 @@
+
+/* Apply styles only to the product page */
+.single-product {
+    display: flex; /* Use Flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    align-items: flex-start; /* Align items at the start */
+    justify-content: center; /* Center content */
+}
+
+/* Style for the product image */
+.single-product div.images {
+    flex: 0 1 70%; /* Allow the image to take up 70% of the space */
+    margin-right: 10px; /* Reduced space between image and summary */
+    display: flex; /* Enable flexbox on image container */
+    justify-content: center; /* Center the image horizontally */
+    position: relative; /* Set relative position for absolute children */
+}
+
+/* Style for the product image itself */
+.single-product div.images img {
+    max-width: 100%; /* Image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 12px; /* Rounded corners */
+    display: block; /* Ensures no extra space below the image */
+}
+
+/* Hide the onsale label only on the product page */
+.onsale.onsale-1 {
+    display: none !important; /* Hides the onsale label */
+}
+
+/* Style for the product details section */
+.single-product div.summary {
+    flex: 1 1 40%; /* Allow summary to take up 40% of the space */
+    padding: 20px; /* Padding around details */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 12px; /* Rounded corners */
+    text-align: left; /* Aligns text to the left */
+}
+
+/* Center the product title on the page */
+.single-product .woocommerce-products-header__title.page-title {
+    text-align: center;
+    font-size: 2.5em; /* Larger title */
+    margin: 20px 0; /* Space above and below */
+    font-weight: bold; /* Bold title */
+}
+
+/* Style for the product price */
+.single-product p.price {
+    font-size: 1.8em; /* Larger font size */
+    color: #333; /* Dark color */
+    margin: 10px 0; /* Space above and below */
+}
+
+/* Style for the Add to Cart button */
+.single-product .button {
+    background-color: rgb(143, 214, 255);
+    color: black;
+    font-weight: bold;
+    border: 1px solid #000;
+    padding: 12px 18px; /* Adjust for a modern look */
+    border-radius: 8px; /* Rounded corners */
+    display: inline-block; /* Inline block */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    text-transform: uppercase; /* Uppercase text */
+}
+
+.single-product .button:hover {
+    background-color: rgb(101, 231, 101);
+}
+
+/* Reviews Section */
+.single-product #reviews {
+    margin-top: 30px; /* Space above reviews */
+}
+
+/* Related Products */
+.single-product .related {
+    margin-top: 40px; /* Space above related products */
+    display: flex; 
+    justify-content: center; /* Center the content */
+    flex-wrap: wrap; /* Allows wrapping */
+}
+
+/* Style for individual related product items */
+.single-product .related ul.products {
+    display: flex; /* Flexbox for the product list */
+    justify-content: center; /* Center the product items */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    padding: 0; /* Remove default padding */
+}
+
+/* Card styling for related products */
+.single-product .related ul.products li.product {
+    margin: 15px; /* Space between products */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 12px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth transform */
+    flex: 0 1 calc(25% - 30px); /* Set width to 25% minus margins for 4 columns */
+    box-sizing: border-box; /* Ensure padding/borders are included in width */
+}
+
+.single-product .related ul.products li.product:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .single-product .related ul.products li.product {
+        flex: 0 1 calc(50% - 30px); /* Adjust width for 2 columns */
+    }
+}
+
+@media (max-width: 480px) {
+    .single-product .related ul.products li.product {
+        flex: 0 1 100%; /* Full width for mobile screens */
+    }
+}
+
+/* Additional styling for modern look */
+.single-product body {
+    font-family: 'Arial', sans-serif; /* Modern font */
+    line-height: 1.6; /* Improved readability */
+}
+
+.single-product h2, 
+.single-product h3, 
+.single-product h4 {
+    font-weight: 700; /* Bold headings */
+    color: #333; /* Dark color */
+}

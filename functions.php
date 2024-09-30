@@ -36,3 +36,10 @@ function register_menus() {
     ));
 }
 add_action('init', 'register_menus');
+
+function my_custom_scripts() {
+    if (is_product()) { // Check if on a single product page
+        wp_enqueue_script('custom-onsale-class', get_template_directory_uri() . '/js/custom-onsale.js', array(), null, true);
+    }
+}
+add_action('wp_enqueue_scripts', 'my_custom_scripts');

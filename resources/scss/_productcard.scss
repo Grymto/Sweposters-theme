@@ -105,3 +105,17 @@
     color: black;
     font-weight: bold;
 }
+
+.wc-block-grid__product-rating .star-rating, .wc-block-grid__product-rating .wc-block-grid__product-rating__stars {
+    font-family: WooCommerce;
+    font-size: 1em;
+    font-weight: 400;
+    height: 1.618em;
+    line-height: 1.618;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    width: 5.3em;
+    color: red;
+}

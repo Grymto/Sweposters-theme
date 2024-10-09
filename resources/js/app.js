@@ -4,8 +4,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Loop through each element and assign a unique class
     saleElements.forEach((element, index) => {
+        // Add a unique class based on index
         element.classList.add(`onsale-${index + 1}`);
+
+        // Add a class based on the parent container
+        if (element.closest('.single-product')) {
+            element.classList.add('main-product-onsale');
+        } else if (element.closest('.related')) {
+            element.classList.add('related-product-onsale');
+        } else {
+            element.classList.add('other-onsale');
+        }
+
         console.log(`Added class onsale-${index + 1} to span.onsale element`); // Log for debugging
     });
-});
 
+});

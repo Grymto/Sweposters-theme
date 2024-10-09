@@ -37,9 +37,14 @@ function register_menus() {
 }
 add_action('init', 'register_menus');
 
-function my_custom_scripts() {
-    if (is_product()) { // Check if on a single product page
-        wp_enqueue_script('custom-onsale-class', get_template_directory_uri() . '/js/custom-onsale.js', array(), null, true);
+add_filter('woocommerce_sale_flash', 'conditionally_show_woocommerce_sale_flash', 10, 3);
+
+function conditionally_show_woocommerce_sale_flash($html, $post, $product) {
+    // Kontrollera om vi är på en specifik produktsida
+    if (is_product()) {
+        return ''; // Returnera tomt för att dölja etiketten på produktsidan
     }
+
+    // Annars returnera etiketten som den är
+    return $html;
 }
-add_action('wp_enqueue_scripts', 'my_custom_scripts');

@@ -1,0 +1,179 @@
+/* Style for the product details section (Summary) */
+.single-product div.summary {
+    flex: 1 1 40%; /* Allow summary to take up 40% of the space */
+    padding: 25px; /* Increased padding for a spacious feel */
+    background-color: #f1f1f1; /* Softer, light grey background */
+    border: 1px solid #89b4ff; /* Subtle border for a cleaner look */
+    border-radius: 15px; /* Slightly more rounded corners for a modern look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow for more depth */
+    text-align: left; /* Default text alignment */
+    line-height: 1.8; /* Improve text readability */
+}
+
+/* Centered product title */
+.single-product .product_title.entry-title {
+    text-align: center; /* Center the title text */
+    font-size: 2.5em; /* Adjust font size if needed */
+    margin: 20px 0; /* Add spacing above and below */
+    font-weight: bold; /* Bold title */
+}
+
+/* Centered description text */
+.single-product div.summary .woocommerce-product-details__short-description {
+    text-align: center; /* Center the description text */
+    margin-bottom: 20px; /* Add spacing below */
+}
+
+/* Center the quantity input */
+.single-product form.cart .quantity {
+    display: flex;
+    justify-content: center; /* Center the quantity input */
+    margin-bottom: 10px; /* Add space below the input */
+}
+
+/* Center the input field */
+.single-product form.cart .quantity input.qty {
+    width: 50%; /* Adjust the width as needed */
+    text-align: center; /* Center the text inside the input */
+    margin: 0 auto; /* Center the input element itself */
+}
+
+/* Style for the product price */
+.single-product p.price {
+    font-size: 2em; /* Larger font size for emphasis */
+    color: #444; /* Slightly lighter dark color for a modern touch */
+    margin: 15px 0; /* More space above and below */
+    font-weight: bold; /* Emphasize the price */
+    text-align: center; /* Center the price text */
+}
+
+/* Style for the Add to Cart button */
+.single-product .single_add_to_cart_button.button.alt {
+    background-color: rgb(143, 214, 255) !important;
+    color: black !important;
+    font-weight: bold !important;
+    border: 1px solid #000 !important;
+    padding: 14px 20px !important; /* Increased padding for better touch target */
+    border-radius: 10px !important; /* More rounded corners for a modern look */
+    display: block !important;
+    width: 30% !important; /* Set button width to 50% */
+    margin: 10px auto 0 !important; /* Center the button */
+    transition: background-color 0.1s ease !important;
+    text-transform: uppercase !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add slight shadow for depth */
+    margin-left: 5%;
+}
+
+/* Hover effect for the Add to Cart button */
+.single-product .single_add_to_cart_button.button.alt:hover {
+    background-color: rgb(101, 231, 101) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important; /* Enhanced shadow on hover */
+}
+
+/* Style for the category text */
+.single-product .product_meta .posted_in {
+    font-size: 1.2em; /* Slightly larger font */
+    color: #666; /* Muted color */
+    margin-top: 15px; /* Add space above category text */
+    text-align: center; /* Center category text */
+    font-style: italic; /* Italicize category text */
+    margin-right: 7%;
+}
+
+/* Style for the tags text */
+.single-product .product_meta .tagged_as {
+    font-size: 1.2em; /* Slightly larger font */
+    color: #666; /* Muted color */
+    margin-top: 15px; /* Add space above tags */
+    text-align: center; /* Center tags text */
+    font-style: italic; /* Italicize tags text */
+}
+
+/* Category link styling */
+.single-product .product_meta .posted_in a {
+    color: #444; /* Category link color */
+    font-weight: bold; /* Make the category name stand out */
+    transition: color 0.3s ease; /* Smooth transition */
+    font-style: italic; /* Italicize category links */
+    text-decoration: none;
+}
+
+.single-product .product_meta .posted_in a:hover {
+    color: #000; /* Darker color on hover */
+}
+
+/* Tag link styling */
+.single-product .product_meta .tagged_as a {
+    color: #444; /* Tag link color */
+    font-weight: bold; /* Make the tags stand out */
+    transition: color 0.3s ease; /* Smooth transition */
+    font-style: italic; /* Italicize tag links */
+    text-decoration: none;
+}
+
+.single-product .product_meta .tagged_as a:hover {
+    color: #000; /* Darker color on hover */
+}
+
+.woocommerce div.product form.cart div.quantity {
+    float: none; 
+    margin: 0 4px 0 0;
+}
+
+.single-product form.cart .quantity input.qty {
+    width: 7% !important;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1%;
+}
+
+.woocommerce div.product form.cart .button {
+    vertical-align: middle;
+    float: none;
+}
+
+.single-product div.summary p {
+    font-family:$text-font ; /* Replace with your specific font */
+    font-size: 1em; /* Adjust size if needed */
+    color: #333; /* Set a color for better readability */
+}
+
+/* Centering the WooCommerce Product Rating */
+.woocommerce-product-rating {
+    text-align: center !important; /* Center the text and stars */
+    margin: 0 auto !important; /* Ensure the element is centered within its container */
+    display: flex !important; /* Use flexbox to align items */
+    justify-content: center !important; /* Center contents horizontally */
+}
+
+/* Optional: If you want to add spacing below the rating */
+.woocommerce-product-rating {
+    margin-bottom: 15px !important; /* Space below the rating */
+}
+
+
+.woocommerce .star-rating span::before {
+    content: "SSSSS";
+    top: 0;
+    position: absolute;
+    left: 0;
+    color: red !important;
+}
+
+/* Styling for the WooCommerce Review Link */
+.woocommerce-review-link {
+    color: #89b4ff !important; /* Change the link color */
+    font-weight: bold !important; /* Make the link bold */
+    text-decoration: none !important; /* Underline the link */
+    font-family: $text-font !important; /* Apply the specified font-family */
+    display: inline-block !important; /* Ensure it's treated as a block for better spacing */
+    margin: 10px 0 !important; /* Space above and below the link */
+    transition: color 0.3s ease !important; /* Smooth color transition on hover */
+}
+
+/* Hover effect for the review link */
+.woocommerce-review-link:hover {
+    color: darkblue !important; /* Change color on hover */
+}
+
+

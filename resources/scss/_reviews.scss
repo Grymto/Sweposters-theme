@@ -1,0 +1,293 @@
+/* Centering the WooCommerce Tabs and adding a blue border */
+.woocommerce-tabs ul.tabs {
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center the tabs */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+    border-radius: 5px; /* Optional: add slight rounding to the corners */
+}
+
+/* Add space between tabs */
+.woocommerce-tabs ul.tabs li {
+    margin: 0 2px !important; /* Add horizontal space between tabs */
+}
+
+/* Styling for the inactive Description Tab */
+.woocommerce-tabs .description_tab {
+    border: 1px solid #ccc !important; /* Lighter gray border for inactive state */
+    border-radius: 5px !important; /* Keep the corners rounded */
+    padding: 7px !important; /* Same padding for uniformity */
+    background-color: #f9f9f9 !important; /* Light background for consistency */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; /* Soft shadow for inactive tabs */
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+/* Styling for the active Description Tab */
+.woocommerce-tabs .description_tab.active {
+    border: 1px solid #89b4ff !important; /* Optional: thicker border for emphasis */
+    border-radius: 5px !important; /* Keep the corners rounded */
+    padding: 7px !important; /* Add padding for better appearance */
+    background-color: #f9f9f9 !important; /* Light background for contrast */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important; /* More pronounced shadow for active tab */
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+/* Styling for the inactive Reviews Tab */
+.reviews_tab {
+    border: 1px solid #ccc !important; /* Lighter gray border for inactive state */
+    border-radius: 5px !important; /* Keep the corners rounded */
+    padding: 7px !important; /* Same padding for uniformity */
+    background-color: #f9f9f9 !important; /* Light background for consistency */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; /* Soft shadow for inactive tabs */
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+/* Styling for the active Reviews Tab */
+.reviews_tab.active {
+    border: 1px solid #89b4ff!important; /* Optional: thicker border for emphasis */
+    border-radius: 5px !important; /* Keep the corners rounded */
+    padding: 7px !important; /* Add padding for better appearance */
+    background-color: #f9f9f9 !important; /* Light background for contrast */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important; /* More pronounced shadow for active tab */
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs::before {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-bottom: none; /* Change from 1px solid #cfc8d8 to none */
+    z-index: 1;
+}
+
+
+//description
+
+
+/* Centering the content of the Description Tab */
+.woocommerce-Tabs-panel--description {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text within the panel */
+    padding: 15px; /* Optional: add padding for better appearance */
+    border: 1px blue solid; /* Border for emphasis */
+    border-radius: 8px; /* Rounded corners */
+    width: 40%; /* Set the width to 40% */
+    margin: 15px auto; /* Center the panel and add space above/below */
+}
+
+/* Style for the description title */
+.woocommerce-Tabs-panel--description h2 {
+    margin-bottom: 10px; /* Space below the title */
+    font-size: 1.5em; /* Adjust title size as needed */
+    font-family: italic !important;
+}
+
+/* Style for the description text */
+.woocommerce-Tabs-panel--description > * {
+    width: 100%; /* Ensure it uses full width of the panel */
+    font-family: $text-font;
+}
+
+/* Ensure the tab container centers content */
+.woocommerce-tabs {
+    text-align: center; /* Center align the tabs */
+}
+
+/* Additional centering for the tabs wrapper */
+.woocommerce div.product .woocommerce-tabs {
+    display: flex;
+    flex-direction: column; /* Stack the tabs and content vertically */
+    align-items: center; /* Center align children */
+}
+
+/* Optional: remove any extra padding or margin from the tabs */
+.woocommerce-tabs ul.tabs {
+    margin-bottom: 0; /* Adjust as needed */
+}
+
+.woocommerce-Tabs-panel.woocommerce-Tabs-panel--description.panel.entry-content.wc-tab{
+    border: 1px solid #89b4ff !important; /* Blue border */
+    border-radius: 8px !important; /* Rounded corners */
+    padding: 15px !important; /* Padding for better appearance */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow for more depth */
+    background-color: #f1f1f1 !important; /* Light background for contrast */
+    margin: 0 auto !important; /* Center the panel */
+    max-width: 90% !important; /* Set a maximum width */
+    text-align: center !important; /* Center text inside */
+}
+
+
+// Reviews
+
+
+/* Styling for the Reviews Tab Panel */
+.woocommerce-Tabs-panel.woocommerce-Tabs-panel--reviews.panel.entry-content.wc-tab {
+    border: 1px solid #89b4ff !important; /* Blue border */
+    border-radius: 8px !important; /* Rounded corners */
+    padding: 15px !important; /* Padding for better appearance */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important; /* Increased shadow for more depth */
+    background-color: #f1f1f1 !important; /* Light background for contrast */
+    margin: 0 auto !important; /* Center the panel */
+    max-width: 90% !important; /* Set a maximum width */
+    text-align: center !important; /* Center text inside */
+}
+
+/* Centering the No Reviews Message */
+.woocommerce div.product .woocommerce-noreviews {
+    text-align: center !important; /* Center the text inside */
+    margin: 20px 0 !important; /* Add some vertical margin for spacing */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Styling for the <h2> elements within the Reviews Tab */
+.woocommerce-Tabs-panel.woocommerce-Tabs-panel--reviews.panel.entry-content.wc-tab h2 {
+    font-size: 1.8em !important; /* Increase font size */
+    margin-bottom: 10px !important; /* Space below the title */
+    color: #333 !important; /* Darker color for the title */
+    font-style: italic !important; /* Make the text italic */
+}
+
+/* Styling for the "Your Review" text and stars */
+.woocommerce-Tabs-panel.woocommerce-Tabs-panel--reviews.panel.entry-content.wc-tab .review-title, 
+.woocommerce-Tabs-panel.woocommerce-Tabs-panel--reviews.panel.entry-content.wc-tab .star-rating {
+    text-align: center !important; /* Center the text and stars */
+    margin: 10px 0 !important; /* Add margin for spacing */
+}
+
+/* Change the star color to red */
+.woocommerce-Tabs-panel.woocommerce-Tabs-panel--reviews.panel.entry-content.wc-tab .star-rating span {
+    color: red !important; /* Set star color to red */
+}
+
+/* Styling for the <p> text within the Reviews Tab */
+.woocommerce-Tabs-panel.woocommerce-Tabs-panel--reviews.panel.entry-content.wc-tab p {
+    font-size: 1em !important; /* Regular font size */
+    margin-bottom: 15px !important; /* Space below paragraphs */
+    text-align: left !important; /* Left align the paragraph text */
+    color: #555 !important; /* Darker gray for paragraph text */
+    font-family: $text-font; /* Use the text font */
+}
+
+/* Styling for the input button within the Reviews Tab */
+.woocommerce-Tabs-panel.woocommerce-Tabs-panel--reviews.panel.entry-content.wc-tab input[type="submit"],
+.woocommerce-Tabs-panel.woocommerce-Tabs-panel--reviews.panel.entry-content.wc-tab button.form-submit {
+    background-color: rgb(143, 214, 255) !important; /* Light blue background */
+    color: black !important; /* Black text color */
+    font-weight: bold !important; /* Bold font */
+    border: 1px solid #000 !important; /* Black border */
+    padding: 14px 20px !important; /* Increased padding */
+    border-radius: 10px !important; /* More rounded corners */
+    display: block !important; /* Block display */
+    margin: 10px auto 0 !important; /* Center the button */
+    width: 90% !important; /* Make the button width 90% of its container */
+    max-width: 300px !important; /* Optional: set a max-width */
+    transition: background-color 0.1s ease !important; /* Smooth background transition */
+    text-transform: uppercase !important; /* Uppercase text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important; /* Slight shadow */
+}
+
+/* Hover effect for the input button within the Reviews Tab */
+.woocommerce-Tabs-panel.woocommerce-Tabs-panel--reviews.panel.entry-content.wc-tab input[type="submit"]:hover,
+.woocommerce-Tabs-panel.woocommerce-Tabs-panel--reviews.panel.entry-content.wc-tab button.form-submit:hover {
+    background-color: rgb(101, 231, 101) !important;
+    border-color: #000 !important; /* Keep the border black on hover */
+    transform: scale(1.05) !important; /* Slightly increase the button size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important; /* Increased shadow for depth */
+}
+
+/* Styling for the textarea within the Reviews Tab */
+.woocommerce-Tabs-panel.woocommerce-Tabs-panel--reviews.panel.entry-content.wc-tab textarea {
+    width: 100% !important; /* Full width */
+    height: 100px !important; /* Adjust height as needed */
+    border: 1px solid #ccc !important; /* Light gray border */
+    border-radius: 5px !important; /* Rounded corners */
+    padding: 10px !important; /* Padding inside textarea */
+    margin-bottom: 15px !important; /* Space below textarea */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; /* Slight shadow */
+    resize: vertical !important; /* Allow vertical resizing */
+}
+
+
+// stars
+
+
+/* Centering the stars in the Reviews Tab */
+.comment-form-rating .stars {
+    display: flex !important; /* Use flexbox for centering */
+    justify-content: center !important; /* Center the stars horizontally */
+    margin: 10px 0 !important; /* Add margin for spacing */
+}
+
+/* Change the color of the filled stars to red */
+.comment-form-rating .stars span {
+    color: lightgray !important; /* Default color for unfilled stars */
+}
+
+/* Highlight the filled stars */
+.comment-form-rating .stars span[style] {
+    color: red !important; /* Change filled stars to red */
+}
+
+/* Optional: Ensure all star classes are red */
+.comment-form-rating .stars .star-1,
+.comment-form-rating .stars .star-2,
+.comment-form-rating .stars .star-3,
+.comment-form-rating .stars .star-4,
+.comment-form-rating .stars .star-5 {
+    color: red !important; /* Ensure all star classes are red */
+}
+
+// Userreview
+
+.commentlist {
+    list-style: none !important; /* Remove default list styling */
+    padding: 0 !important; /* Reset padding */
+    margin: 20px 0 !important; /* Space above and below the comment list */
+}
+
+/* Styling for individual comments within the comment list */
+.commentlist .review {
+    border: 1px solid #89b4ff !important; /* Blue border for comments */
+    border-radius: 8px !important; /* Rounded corners */
+    padding: 15px !important; /* Padding for better appearance */
+    margin: 10px 0 !important; /* Space between comments */
+    background-color: #f9f9f9 !important; /* Light background for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; /* Soft shadow for depth */
+    text-align: center !important; /* Center align text */
+    font-family: $text-font !important; /* Apply the specified font-family */
+}
+
+/* Optional: Styling for the comment author */
+.commentlist .review .comment-author {
+    font-weight: bold !important; /* Bold author names */
+    color: #333 !important; /* Darker color for better visibility */
+}
+
+/* Optional: Styling for the comment date */
+.commentlist .review .comment-date {
+    font-size: 0.9em !important; /* Smaller font size for date */
+    color: #888 !important; /* Light gray for date */
+}
+
+/* Optional: Styling for the comment content */
+.commentlist .review p {
+    font-size: 1em !important; /* Regular font size for content */
+    color: #555 !important; /* Darker gray for paragraph text */
+    margin-bottom: 10px !important; /* Space below paragraphs */
+    text-align: center !important; /* Center align paragraph text */
+}
+
+
+
+
+
+
+
+
+

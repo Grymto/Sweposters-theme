@@ -549,6 +549,7 @@ body .is-layout-flex {
   transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
   display: inline-block; /* Ensure it behaves like a button */
   margin-top: 5%;
+  margin-bottom: 10%;
 }
 /* Hover effect for buttons */
 .wp-block-button__link.has-black-color.has-pale-cyan-blue-background-color.has-text-color.has-background.has-link-color.wp-element-button:hover {
@@ -569,6 +570,28 @@ body .is-layout-flex {
 .wc-block-grid.has-3-columns .wc-block-grid__product {
   flex: none !important;
   max-width: none !important;
+}
+.wc-block-featured-product__description, .wc-block-featured-product__link, .wc-block-featured-product__price, .wc-block-featured-product__title, .wc-block-featured-product__variation {
+  color: inherit;
+  padding: 0 48px 16px;
+  width: 100%;
+  z-index: 1;
+  color: yellow !important;
+  font-size: 30px;
+  font-weight: bold;
+}
+.wc-block-featured-product__price {
+  font-weight: bold;
+}
+.wp-block-button__link.wp-element-button {
+  color: black;
+  background-color: white;
+  border: 1px solid #7a9bd3;
+}
+.wp-block-button__link.wp-element-button:hover {
+  color: black;
+  background-color: yellow;
+  border: 1px solid #7a9bd3;
 }
 /* Adding padding to the left and right of the product grid */
 .wc-block-grid,

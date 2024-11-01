@@ -63,6 +63,8 @@
 }
 
 
+
+
 //description
 
 
@@ -118,6 +120,10 @@
     margin: 0 auto !important; /* Center the panel */
     max-width: 90% !important; /* Set a maximum width */
     text-align: center !important; /* Center text inside */
+}
+
+.woocommerce-Tabs-panel.woocommerce-Tabs-panel--description.panel.entry-content.wc-tab{
+    margin-bottom: 2% !important;
 }
 
 
@@ -211,6 +217,10 @@
     margin-bottom: 15px !important; /* Space below textarea */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; /* Slight shadow */
     resize: vertical !important; /* Allow vertical resizing */
+}
+
+.woocommerce-Tabs-panel.woocommerce-Tabs-panel--reviews.panel.entry-content.wc-tab{
+    margin-bottom: 2% !important;
 }
 
 

@@ -293,6 +293,9 @@ header.header .menu a:hover {
   flex-direction: column;
   align-items: center;
 }
+.wc-block-grid.has-4-columns .wc-block-grid__product {
+  max-width: none !important;
+}
 /* Add hover effect for cards */
 .wc-block-grid__product:hover {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.15); /* More pronounced shadow on hover */
@@ -481,6 +484,91 @@ select.orderby option {
 /* Hover effect for dropdown */
 select.orderby:hover {
   border-color: #66afe9; /* Border color on hover */
+}
+/* Image styling for rounded look with hover effect */
+.wp-block-image img {
+  margin-top: 10% !important;
+  margin-bottom: 10% !important;
+  box-sizing: border-box;
+  height: auto;
+  max-width: 90%; /* Keeps it within a more centered layout */
+  vertical-align: bottom;
+  border-radius: 20%;
+  border: 2px solid #89b4ff; /* Adds the blue border */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow for more depth */
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+}
+.wp-block-image img:hover {
+  transform: scale(1.05);
+}
+/* Centered, compact content layout */
+body .is-layout-flex {
+  display: flex;
+  width: 60%; /* Reducing width for a more centered and compact feel */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 15px; /* Minimal spacing between items */
+  padding: 10px; /* Reduced padding for a tighter look */
+}
+/* Modern text styling with more compact spacing */
+.is-layout-flex > * {
+  margin: 0;
+  font-size: 18px; /* Slightly smaller text size */
+  font-family: "Montserrat", sans-serif; /* Use a more modern font */
+  color: #444; /* Slightly darker text for better contrast */
+  line-height: 1.5; /* Increased line height for better readability */
+  text-align: center; /* Centers text for a focused look */
+  letter-spacing: 0.5px; /* Slightly increased letter spacing for a modern feel */
+  text-transform: capitalize; /* Capitalizes the first letter of each word for a cleaner look */
+}
+/* Compact, centered product grid styling */
+.theme-twentytwenty .wc-block-grid.has-3-columns .wc-block-grid__product,
+.wc-block-grid.has-3-columns .wc-block-grid__product {
+  flex: 1 1 30%;
+  max-width: 28%; /* Allows for compact, centered positioning */
+  margin: 5px; /* Reduced margin for tighter layout */
+  padding: 10px; /* Reduced padding inside cards */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 8px; /* Subtler rounding */
+  transition: transform 0.2s ease;
+  text-align: center; /* Centers text within product cards */
+}
+.wc-block-grid.has-3-columns .wc-block-grid__product:hover {
+  transform: translateY(-3px); /* Subtle lift on hover */
+}
+.wp-block-button__link.has-black-color.has-pale-cyan-blue-background-color.has-text-color.has-background.has-link-color.wp-element-button {
+  background-color: #89b4ff; /* Base background color */
+  color: #000; /* Text color */
+  padding: 10px 20px; /* Padding for button */
+  border-radius: 5%; /* Slight rounding of button corners */
+  font-size: 16px; /* Font size for button text */
+  text-decoration: none; /* Remove underline from links */
+  border: 2px solid #7a9bd3; /* Matching border color */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+  display: inline-block; /* Ensure it behaves like a button */
+  margin-top: 5%;
+}
+/* Hover effect for buttons */
+.wp-block-button__link.has-black-color.has-pale-cyan-blue-background-color.has-text-color.has-background.has-link-color.wp-element-button:hover {
+  background-color: yellow !important; /* Color change on hover */
+  transform: translateY(-1px); /* Reduced lift effect on hover */
+  box-shadow: none; /* No shadow on hover for a cleaner look */
+}
+.wp-block-button__link.has-black-color.has-pale-cyan-blue-background-color.has-text-color.has-background.has-link-color.wp-element-button {
+  font-size: 18px; /* Slightly smaller text size */
+  font-family: "Montserrat", sans-serif; /* Modern font */
+  color: #444; /* Slightly darker text for better contrast */
+  line-height: 1.5; /* Increased line height for better readability */
+  letter-spacing: 0.5px; /* Slightly increased letter spacing */
+  text-transform: capitalize; /* Capitalizes the first letter of each word */
+  text-align: center; /* Center text for a focused look */
+  text-decoration: none; /* Ensure no underline for button links */
+}
+.wc-block-grid.has-3-columns .wc-block-grid__product {
+  flex: none !important;
+  max-width: none !important;
 }
 /* Adding padding to the left and right of the product grid */
 .wc-block-grid,
@@ -723,7 +811,7 @@ ul.products li.product .button:hover {
 /* Style for the product details section (Summary) */
 .single-product div.summary {
   flex: 1 1 40%; /* Allow summary to take up 40% of the space */
-  padding: 25px; /* Increased padding for a spacious feel */
+  padding: 17px; /* Increased padding for a spacious feel */
   background-color: #f1f1f1; /* Softer, light grey background */
   border: 1px solid #89b4ff; /* Subtle border for a cleaner look */
   border-radius: 15px; /* Slightly more rounded corners for a modern look */
@@ -978,6 +1066,9 @@ ul.products li.product .button:hover {
   max-width: 90% !important; /* Set a maximum width */
   text-align: center !important; /* Center text inside */
 }
+.woocommerce-Tabs-panel.woocommerce-Tabs-panel--description.panel.entry-content.wc-tab {
+  margin-bottom: 2% !important;
+}
 /* Styling for the Reviews Tab Panel */
 .woocommerce-Tabs-panel.woocommerce-Tabs-panel--reviews.panel.entry-content.wc-tab {
   border: 1px solid #89b4ff !important; /* Blue border */
@@ -1057,6 +1148,9 @@ ul.products li.product .button:hover {
   margin-bottom: 15px !important; /* Space below textarea */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; /* Slight shadow */
   resize: vertical !important; /* Allow vertical resizing */
+}
+.woocommerce-Tabs-panel.woocommerce-Tabs-panel--reviews.panel.entry-content.wc-tab {
+  margin-bottom: 2% !important;
 }
 /* Centering the stars in the Reviews Tab */
 .comment-form-rating .stars {
@@ -1243,5 +1337,5 @@ body {
   margin: 0;
   background-color: rgb(234, 234, 234);
   overflow-x: hidden;
-  padding-top: calc(4.5rem + 80px); /* Adjust this to match the combined height of your top-header and header */
+  padding-top: calc(4.2rem + 80px); /* Adjust this to match the combined height of your top-header and header */
 }

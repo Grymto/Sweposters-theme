@@ -30,23 +30,7 @@ p.price{
     display: none !important;
 }
 
-.label.wpo-image-button figcaption.wpo-image-text {
-    align-items: center;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    font-family: inherit;
-    font-size: 14px;
-    font-weight: 600;
-    height: 86% !important;
-    justify-content: center;
-    line-height: 1.25em;
-    margin-top: 0;
-    padding: .625em;
-    position: absolute;
-    text-align: center;
-    transition: all .2s ease-in-out;
-    width: 100%;
-    z-index: 2;
+.label.wpo-image-button figcaption.wpo-image-text {  
+     height: 86% !important;
 }
 

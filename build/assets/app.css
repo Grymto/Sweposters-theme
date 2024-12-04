@@ -1384,7 +1384,7 @@ p.price {
   display: none !important;
 }
 .wpo-image-wrap {
-  height: none !important;
+  height: 86% !important;
 }
 body {
   margin: 0;

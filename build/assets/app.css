@@ -1383,8 +1383,8 @@ p.price {
 .wc-block-grid__product-price.price {
   display: none !important;
 }
-.label.wpo-image-button.figcaption.wpo-image-text {
-  height: 86% !important;
+.wpo-image-wrap {
+  height: none !important;
 }
 body {
   margin: 0;

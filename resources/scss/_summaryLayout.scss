@@ -1,0 +1,32 @@
+.additional_information_tab{
+    display: none !important;
+}
+.wpo-image-buttons {
+    grid-template-columns: repeat(auto-fit, min(100%, var(--wpo-image-buttons-width, 118px))) !important;
+}
+
+.wpo-image-button:empty {
+    display: none !important;
+}
+
+.wpo-image-buttons {
+    width: 100%; /* or a specific width, e.g., 300px */
+    max-width: 400px; /* Optional, to constrain max size */
+    height: auto; /* Adjust height if needed, or use fixed height */
+    overflow: hidden; /* Prevents overflowing content from changing layout */
+    display: grid; /* Ensures consistent grid behavior */
+    grid-template-columns: repeat(auto-fit, min(100px, var(--wpo-image-buttons-width, 118px))) !important;
+    gap: 10px; /* Space between buttons */
+}
+
+.wpo-image-buttons label.wpo-image-button:focus-within{
+    border: none !important;
+}
+
+p.price{
+    display: none;
+}
+.wc-block-grid__product-price.price{
+    display: none !important;
+}
+

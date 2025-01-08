@@ -87,26 +87,3 @@ header.header {
     width: 100%;
   }
 }
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  .top-header {
-    height: 3rem;
-    padding: 0 1rem;
-    top: 64px;  /* Adjust for admin bar on small screens */
-  }
-
-  header.header {
-    height: 60px;
-    padding: 0 1rem;
-    top: calc(3rem + 64px);  /* Adjust for smaller top-header */
-  }
-
-  .top-header .Logo {
-    font-size: 2rem;
-  }
-
-  .menu li {
-    margin: 0 1rem;
-  }
-}

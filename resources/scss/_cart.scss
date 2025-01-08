@@ -1,0 +1,90 @@
+.page-template-default.page.page-id-8.logged-in.admin-bar.theme-Sweposters.woocommerce-cart.woocommerce-page.woocommerce-js.customize-support{
+    background-color: white;
+}
+// Product block
+.wc-block-cart-items.wp-block-woocommerce-cart-line-items-block{
+    margin-top: 60px !important;
+    border: 2px solid #7a9bd3;
+    padding: 2%;
+    border-radius: 5% !important;
+}
+.is-large.wc-block-cart .wc-block-cart-items{
+    border-bottom: 2px solid #7a9bd3 !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08); 
+}
+
+.wc-block-components-main.wc-block-cart__main.wp-block-woocommerce-cart-items-block{
+    width: 65% !important;
+    margin-left: 10% !important;
+    font-family: sans-serif !important;
+}
+
+/* Styling the rows */
+.wc-block-cart-items tbody tr {
+    padding: 15px 10px; /* Padding inside rows */
+    border-bottom: 1px solid #7a9bd3 !important;
+    text-decoration: none !important;
+    font-size: 20px !important;
+    margin-top: 2% !important;
+}
+.wc-block-components-product-name{
+    text-decoration: none !important;
+    color: black;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+// total block
+.wc-block-components-sidebar.wc-block-cart__sidebar.wp-block-woocommerce-cart-totals-block{
+    margin-top: 60px !important;
+    border: 2px solid #7a9bd3;
+    font-family: sans-serif !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+.wc-block-components-sidebar{
+    width: 25% !important;
+    margin-left: 5% !important;
+    margin-right: 10% !important;
+    height: max-content;
+    padding: 1% !important;
+    border-radius: 5% !important;
+}
+.wc-block-components-sidebar-layout{
+    flex-wrap: unset !important;
+}
+.wc-block-components-button.wp-element-button.wc-block-cart__submit-button.contained{
+    border: 1px solid #7a9bd3;
+    background-color: yellow;
+    border-radius: 2% !important;
+    text-decoration: none !important;
+    width: 50% !important;
+    margin-left: 25%;
+    margin-top: 4%;
+}
+.wc-block-components-button.wp-element-button.wc-block-cart__submit-button.contained:hover {
+    background-color: rgb(78, 247, 78); /* Change background color on hover */
+    border: 1px solid yellow; /* Optional: invert the border color */
+    font-weight: bold;
+    color: white !important;
+}
+
+.wc-block-components-button__text{
+    color: black;
+    font-weight: bold;
+}
+
+
+
+// h1 och h2 
+
+.wc-block-cart-items__header{
+    font-weight: bold !important;
+    font-size: 18px !important;
+    color: red;
+}
+.tr{
+    border-color: green !important;
+    .wc-block-cart-items__row{
+        border: 2px solid green !important;
+    }
+}

@@ -2,7 +2,6 @@ footer {
     background-color: #0693e3;
     padding: 0;
     margin: 0;
-    width: 100%;
     border: 1px solid black;
 
     .container {
@@ -120,14 +119,6 @@ footer {
                 margin: 0 10px;
             }
         }
-
-        .contact-info {
-            margin-top: 50px;
-            font-size: 0.9em;
-            max-width: 960px;
-            text-align: center;
-            font-family: $text-font;
-        }
     }
 
     .rights {
@@ -138,5 +129,11 @@ footer {
         width: 100%;
         color: #000000;
         font-family: $text-font;
+    }
+
+    .contact-info {
+        text-align: center;
+        font-family: $text-font;
+        justify-content: center;
     }
 }

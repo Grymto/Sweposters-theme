@@ -210,6 +210,37 @@ body .is-layout-flex {
     border: 1px solid #7a9bd3;
 }
 
+// Lagt till i varukorg meddelande
+
+.woocommerce-message{
+    border: 3px solid lightgreen !important;
+    border-radius: 1% !important;
+    background-color: yellow !important;
+    box-shadow: 0 3px 6px lightgreen;
+    font-family: sans-serif !important;
+    font-size: 13.5px !important;
+    font-weight: bold !important;
+
+                .button.wc-forward{
+                    color: black;
+                    border: 2px solid green;
+                    background-color: lightgreen;
+                    margin-top: 0.6% !important;
+                    margin-right: 3% !important;
+                    border-radius: 4% !important;
+
+    }
+    .button.wc-forward:hover{
+        color: white;
+        border: 2px solid green;
+        background-color: lightgreen;
+        margin-top: 0.7% !important;
+        margin-right: 3% !important;
+        border-radius: 4% !important;
+
+}
+}
+
 
 
 

@@ -5,7 +5,6 @@ footer {
   background-color: #0693e3;
   padding: 0;
   margin: 0;
-  width: 100%;
   border: 1px solid black;
 }
 footer .container {
@@ -109,13 +108,6 @@ footer .payment-methods .payment-icons img {
   display: block;
   margin: 0 10px;
 }
-footer .payment-methods .contact-info {
-  margin-top: 50px;
-  font-size: 0.9em;
-  max-width: 960px;
-  text-align: center;
-  font-family: "Poppins";
-}
 footer .rights {
   display: flex;
   justify-content: center;
@@ -124,6 +116,11 @@ footer .rights {
   width: 100%;
   color: #000000;
   font-family: "Poppins";
+}
+footer .contact-info {
+  text-align: center;
+  font-family: "Poppins";
+  justify-content: center;
 }
 .top-header {
   background-color: #0693e3;
@@ -201,25 +198,6 @@ header.header .menu a:hover {
 }
 .top-header .Logo a:hover::after {
   width: 100%;
-}
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  .top-header {
-    height: 3rem;
-    padding: 0 1rem;
-    top: 64px; /* Adjust for admin bar on small screens */
-  }
-  header.header {
-    height: 60px;
-    padding: 0 1rem;
-    top: calc(3rem + 64px); /* Adjust for smaller top-header */
-  }
-  .top-header .Logo {
-    font-size: 2rem;
-  }
-  .menu li {
-    margin: 0 1rem;
-  }
 }
 /* Ensure the menu item is positioned relative */
 .menu-item-has-children {
@@ -592,6 +570,31 @@ body .is-layout-flex {
   color: black;
   background-color: yellow;
   border: 1px solid #7a9bd3;
+}
+.woocommerce-message {
+  border: 3px solid lightgreen !important;
+  border-radius: 1% !important;
+  background-color: yellow !important;
+  box-shadow: 0 3px 6px lightgreen;
+  font-family: sans-serif !important;
+  font-size: 13.5px !important;
+  font-weight: bold !important;
+}
+.woocommerce-message .button.wc-forward {
+  color: black;
+  border: 2px solid green;
+  background-color: lightgreen;
+  margin-top: 0.6% !important;
+  margin-right: 3% !important;
+  border-radius: 4% !important;
+}
+.woocommerce-message .button.wc-forward:hover {
+  color: white;
+  border: 2px solid green;
+  background-color: lightgreen;
+  margin-top: 0.7% !important;
+  margin-right: 3% !important;
+  border-radius: 4% !important;
 }
 /* Adding padding to the left and right of the product grid */
 .wc-block-grid,
@@ -1230,131 +1233,39 @@ ul.products li.product .button:hover {
   margin-bottom: 10px !important; /* Space below paragraphs */
   text-align: center !important; /* Center align paragraph text */
 }
-.wp-block-woocommerce-checkout.alignwide.wc-block-checkout {
-  padding-left: 10% !important; /* Add space on the left */
-  padding-right: 10% !important; /* Add space on the right */
-  box-sizing: border-box; /* Ensure padding is included in the element's total width */
+.shop_table.woocommerce-checkout-review-order-table {
+  background-color: white !important;
+  margin-left: 10% !important;
+  border: 2px solid lightblue !important;
+  width: 89% !important;
+  font-family: sans-serif !important;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 2% !important;
 }
-.wp-block-woocommerce-checkout-order-summary-block {
-  background-color: #f9f9f9 !important; /* Light background for contrast */
-  padding: 10px !important; /* Reduce padding for better spacing */
-  border-radius: 8px !important; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; /* Add subtle shadow for depth */
-  margin-bottom: 2% !important; /* Space below the order summary block */
-  border: 1px solid #89b4ff !important; /* Apply blue border */
-  margin-top: 20% !important;
+.form-row.notes {
+  background-color: white !important;
+  margin-left: 10% !important;
+  border: 2px solid lightblue !important;
+  width: 84.5% !important;
+  padding: 2% !important;
+  font-family: sans-serif !important;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 2% !important;
 }
-.is-large .wc-block-checkout__sidebar.is-sticky {
-  position: static !important; /* Change from sticky to static */
+.woocommerce-additional-fields {
+  display: none !important;
 }
-.wc-block-components-order-summary-item {
-  background-color: #f9f9f9 !important; /* Light background for contrast */
-  padding: 4px !important; /* Adjust padding for better spacing */
-  border-radius: 8px !important; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; /* Add subtle shadow for depth */
-  margin-bottom: 5% !important; /* Reduce margin below each item */
-  border-bottom: 0.5px solid #89b4ff !important; /* Border for clarity */
-  border-right: 0.5px solid #89b4ff !important; /* Border for clarity */
+@media only screen and (min-width: 769px) {
+  .klarna-wrapper {
+    float: right;
+    width: 50%;
+    padding-left: 2%;
+    margin-right: 3%;
+    box-sizing: border-box;
+  }
 }
-/* Styling the form container */
-.wc-block-components-form.wc-block-checkout__form {
-  font-family: "Poppins" !important; /* Apply the text font globally */
-}
-/* Styling for H2 and H3 elements */
-.wc-block-components-form.wc-block-checkout__form h2,
-.wc-block-components-form.wc-block-checkout__form h3 {
-  font-style: italic !important; /* Make the headings italic */
-  color: #333 !important; /* Darker heading color */
-  margin-bottom: 10px !important; /* Add spacing below headings */
-}
-/* Styling for labels to position them above the input fields */
-.wc-block-components-form.wc-block-checkout__form label {
-  display: block !important; /* Ensure label is block-level */
-  font-weight: bold !important;
-  font-family: "Poppins" !important;
-  margin-bottom: 5px !important; /* Add space between label and input field */
-}
-/* Styling for input fields */
-.wc-block-components-form.wc-block-checkout__form input[type=text],
-.wc-block-components-form.wc-block-checkout__form input[type=email],
-.wc-block-components-form.wc-block-checkout__form input[type=tel],
-.wc-block-components-form.wc-block-checkout__form select {
-  width: 100% !important; /* Full width input fields */
-  height: auto !important; /* Let height adjust automatically */
-  font-size: 16px !important; /* Font size */
-  border: 1px solid #ccc !important; /* Light border */
-  border-radius: 8px !important; /* Rounded corners */
-  margin-bottom: 20px !important; /* Increase space below input fields */
-  font-family: "Poppins" !important; /* Use the text font */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important; /* Subtle shadow */
-  background-color: #f9f9f9 !important; /* Light background */
-  border: 0.5px solid #89b4ff !important; /* Border for clarity */
-}
-/* Styling for the dropdown menu */
-.wc-block-components-form.wc-block-checkout__form select {
-  background-color: #fff !important; /* White background */
-  cursor: pointer !important; /* Pointer cursor on hover */
-}
-.wc-blocks-components-select__container {
-  border: none !important;
-}
-.wc-blocks-components-select .wc-blocks-components-select__select {
-  -moz-appearance: none;
-  appearance: none;
-  background: none;
-  border-radius: 4px;
-  color: #2b2d2f;
-  font-family: inherit;
-  font-size: inherit;
-  font-size: 1em;
-  font-style: inherit;
-  font-weight: inherit;
-  height: 100%;
-  letter-spacing: inherit;
-  line-height: inherit;
-  padding: 1.6em 0.5em 0 !important;
-  text-decoration: inherit;
-  text-transform: inherit;
-  border: 0.5px solid #89b4ff !important; /* Border for clarity */
-}
-/* Style for the checkout place order button */
-.wc-block-components-button.wp-element-button.wc-block-components-checkout-place-order-button.wc-block-components-checkout-place-order-button--full-width.contained {
-  background-color: #007cba !important; /* Replace with your button's default color */
-  color: #ffffff !important; /* Replace with your button's text color */
-  padding: 15px 30px !important; /* Adjust padding as needed */
-  border: none !important; /* Remove any default borders */
-  border-radius: 8px !important; /* Match your other buttons' border radius */
-  text-align: center !important; /* Center text */
-  font-size: 16px !important; /* Font size to match other buttons */
-  font-family: "Poppins" !important; /* Match your font */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
-}
-/* Hover effects */
-.wc-block-components-button.wp-element-button.wc-block-components-checkout-place-order-button.wc-block-components-checkout-place-order-button--full-width.contained:hover {
-  background-color: rgb(101, 231, 101) !important;
-  color: black !important;
-  transform: translateY(-2px); /* Slight lift effect on hover */
-}
-/* Optional: Focus effect */
-.wc-block-components-button.wp-element-button.wc-block-components-checkout-place-order-button.wc-block-components-checkout-place-order-button--full-width.contained:focus {
-  outline: none; /* Remove default outline */
-  box-shadow: 0 0 5px rgba(0, 124, 186, 0.5); /* Optional shadow effect for focus */
-}
-.wc-block-components-address-card {
-  background-color: #f9f9f9 !important; /* Light background for contrast */
-  border-radius: 8px !important; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; /* Subtle shadow for depth */
-  padding: 15px !important; /* Padding for spacing */
-  margin-bottom: 20px !important; /* Space below the address card */
-  border: 1px solid #89b4ff !important; /* Optional border for clarity */
-  font-family: "Poppins" !important; /* Use the text font */
-}
-/* Optional: Styling for text inside the address card */
-.wc-block-components-address-card h2,
-.wc-block-components-address-card h3,
-.wc-block-components-address-card p {
-  margin: 0 0 10px !important; /* Space below text elements */
-  color: #333 !important; /* Darker text color */
+.page-template-default.page.page-id-9.logged-in.admin-bar.theme-Sweposters.woocommerce-checkout.woocommerce-page.woocommerce-js.customize-support {
+  background-color: white !important;
 }
 .additional_information_tab {
   display: none !important;
@@ -1386,9 +1297,164 @@ p.price {
 .wpo-image-wrap {
   height: 86% !important;
 }
+.page-template-default.page.page-id-8.logged-in.admin-bar.theme-Sweposters.woocommerce-cart.woocommerce-page.woocommerce-js.customize-support {
+  background-color: white;
+}
+.wc-block-cart-items.wp-block-woocommerce-cart-line-items-block {
+  margin-top: 60px !important;
+  border: 2px solid #7a9bd3;
+  padding: 2%;
+  border-radius: 5% !important;
+}
+.is-large.wc-block-cart .wc-block-cart-items {
+  border-bottom: 2px solid #7a9bd3 !important;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+.wc-block-components-main.wc-block-cart__main.wp-block-woocommerce-cart-items-block {
+  width: 65% !important;
+  margin-left: 10% !important;
+  font-family: sans-serif !important;
+}
+/* Styling the rows */
+.wc-block-cart-items tbody tr {
+  padding: 15px 10px; /* Padding inside rows */
+  border-bottom: 1px solid #7a9bd3 !important;
+  text-decoration: none !important;
+  font-size: 20px !important;
+  margin-top: 2% !important;
+}
+.wc-block-components-product-name {
+  text-decoration: none !important;
+  color: black;
+  font-size: 26px;
+  font-weight: bold;
+}
+.wc-block-components-sidebar.wc-block-cart__sidebar.wp-block-woocommerce-cart-totals-block {
+  margin-top: 60px !important;
+  border: 2px solid #7a9bd3;
+  font-family: sans-serif !important;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+.wc-block-components-sidebar {
+  width: 25% !important;
+  margin-left: 5% !important;
+  margin-right: 10% !important;
+  height: max-content;
+  padding: 1% !important;
+  border-radius: 5% !important;
+}
+.wc-block-components-sidebar-layout {
+  flex-wrap: unset !important;
+}
+.wc-block-components-button.wp-element-button.wc-block-cart__submit-button.contained {
+  border: 1px solid #7a9bd3;
+  background-color: yellow;
+  border-radius: 2% !important;
+  text-decoration: none !important;
+  width: 50% !important;
+  margin-left: 25%;
+  margin-top: 4%;
+}
+.wc-block-components-button.wp-element-button.wc-block-cart__submit-button.contained:hover {
+  background-color: rgb(78, 247, 78); /* Change background color on hover */
+  border: 1px solid yellow; /* Optional: invert the border color */
+  font-weight: bold;
+  color: white !important;
+}
+.wc-block-components-button__text {
+  color: black;
+  font-weight: bold;
+}
+.wc-block-cart-items__header {
+  font-weight: bold !important;
+  font-size: 18px !important;
+  color: red;
+}
+.tr {
+  border-color: green !important;
+}
+.tr .wc-block-cart-items__row {
+  border: 2px solid green !important;
+}
+@media (max-width: 768px) {
+  .headertext span {
+    color: blue;
+  }
+  .mob-icon-menu:before {
+    color: blue;
+  }
+  .top-header {
+    display: none;
+  }
+  .primary-menu {
+    display: none;
+  }
+  .header {
+    flex-direction: column; /* Stack header items vertically */
+    text-align: center;
+    display: none !important;
+  }
+  .wp-block-cover__image-background.wp-image-198 {
+    object-fit: fill !important;
+  }
+}
+@media (max-width: 479px) {
+  .top-header {
+    display: none;
+  }
+  .primary-menu {
+    display: none;
+  }
+  .header {
+    flex-direction: column; /* Stack header items vertically */
+    text-align: center;
+    display: none !important;
+  }
+  .wp-block-cover__image-background.wp-image-198 {
+    object-fit: fill !important;
+  }
+  .wp-block-group.is-nowrap.is-layout-flex.wp-container-core-group-is-layout-2.wp-block-group-is-layout-flex {
+    padding: 0px;
+    width: unset;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .wp-block-group.is-nowrap.is-layout-flex.wp-container-core-group-is-layout-2.wp-block-group-is-layout-flex p {
+    font-size: 12px;
+  }
+  .wp-block-group.is-nowrap.is-layout-flex.wp-container-core-group-is-layout-3.wp-block-group-is-layout-flex {
+    padding: 0px;
+    width: unset;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .wp-block-group.is-nowrap.is-layout-flex.wp-container-core-group-is-layout-3.wp-block-group-is-layout-flex p {
+    font-size: 12px;
+  }
+  .wp-block-group.is-nowrap.is-layout-flex.wp-container-core-group-is-layout-4.wp-block-group-is-layout-flex {
+    padding: 0px;
+    width: unset;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .wp-block-group.is-nowrap.is-layout-flex.wp-container-core-group-is-layout-4.wp-block-group-is-layout-flex p {
+    font-size: 12px;
+  }
+  .wp-image-196 {
+    width: unset;
+  }
+  .wp-block-buttons.is-content-justification-center.is-layout-flex.wp-container-core-buttons-is-layout-1.wp-block-buttons-is-layout-flex {
+    width: unset;
+  }
+  .contact-info {
+    text-align: center;
+  }
+}
 body {
-  margin: 0;
   background-color: rgb(234, 234, 234);
-  overflow-x: hidden;
+  overflow-x: visible;
   padding-top: calc(4.2rem + 80px); /* Adjust this to match the combined height of your top-header and header */
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }

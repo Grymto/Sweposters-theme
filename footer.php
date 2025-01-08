@@ -8,15 +8,8 @@
 </head>
 
 <body <?php body_class(); ?>>
-
 <footer>
-    <div class="container">
-    <!-- <img src="<?php echo esc_url(home_url('/wp-content/uploads/2024/05/footer-banner.png')); ?>" alt="footer-banner">
-
-    <div class="flaggor" style="background-image: url('<?php echo esc_url(home_url('/wp-content/uploads/2024/05/flaggor-2.webp')); ?>');"></div> -->
-
-    
-    <div class="content">
+    <!-- <div class="content">
         <div class="column">
             <div class="category-title">Sweposters</div>
             <?php wp_nav_menu(array(
@@ -64,13 +57,9 @@
                 'container_class' => 'menu'
             )); ?>
         </div>
-        </div>
+    </div>  -->
 
-    <div class="payment-methods">
-    <div class="payment-icons">
-    <img src="<?php echo esc_url(home_url('/wp-content/uploads/2024/05/Wordmark_Transparent_And_Black-1.png')); ?>" alt="klarna">
-   
-    </div>
+    <div class="contact-info">
     <p class="contact-info">Kundservice har öppet helgfria vardagar kl 08.30-18.00 via telefon 070-000 00 00.</p>
 </div>
 
@@ -78,7 +67,6 @@
         <div class="rights">
             <p>&copy; <?php echo date('Y'); ?> Sweposters. All rights reserved.</p>
         </div>
-    </div>
 </footer>
 
 <?php wp_footer(); ?> 

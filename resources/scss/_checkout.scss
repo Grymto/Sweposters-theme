@@ -1,144 +1,181 @@
-.wp-block-woocommerce-checkout.alignwide.wc-block-checkout {
-    padding-left: 10% !important; /* Add space on the left */
-    padding-right: 10% !important; /* Add space on the right */
-    box-sizing: border-box; /* Ensure padding is included in the element's total width */
+// .wp-block-woocommerce-checkout.alignwide.wc-block-checkout {
+//     padding-left: 10% !important; /* Add space on the left */
+//     padding-right: 10% !important; /* Add space on the right */
+//     box-sizing: border-box; /* Ensure padding is included in the element's total width */
+// }
+
+// .wp-block-woocommerce-checkout-order-summary-block {
+//     background-color: #f9f9f9 !important; /* Light background for contrast */
+//     padding: 10px !important; /* Reduce padding for better spacing */
+//     border-radius: 8px !important; /* Rounded corners */
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; /* Add subtle shadow for depth */
+//     margin-bottom: 2% !important; /* Space below the order summary block */
+//     border: 1px solid #89b4ff !important; /* Apply blue border */
+//     margin-top: 20% !important;
+// }
+// .is-large .wc-block-checkout__sidebar.is-sticky {
+//     position: static !important; /* Change from sticky to static */
+// }
+
+// .wc-block-components-order-summary-item {
+//     background-color: #f9f9f9 !important; /* Light background for contrast */
+//     padding: 4px !important; /* Adjust padding for better spacing */
+//     border-radius: 8px !important; /* Rounded corners */
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; /* Add subtle shadow for depth */
+//     margin-bottom: 5% !important; /* Reduce margin below each item */
+//     border-bottom: 0.5px solid #89b4ff !important; /* Border for clarity */
+//     border-right: 0.5px solid #89b4ff !important; /* Border for clarity */
+// }
+
+// // input feilds
+
+
+// /* Styling the form container */
+// .wc-block-components-form.wc-block-checkout__form {
+//     font-family: $text-font !important; /* Apply the text font globally */
+// }
+
+// /* Styling for H2 and H3 elements */
+// .wc-block-components-form.wc-block-checkout__form h2,
+// .wc-block-components-form.wc-block-checkout__form h3 {
+//     font-style: italic !important; /* Make the headings italic */
+//     color: #333 !important; /* Darker heading color */
+//     margin-bottom: 10px !important; /* Add spacing below headings */
+// }
+
+// /* Styling for labels to position them above the input fields */
+// .wc-block-components-form.wc-block-checkout__form label {
+//     display: block !important; /* Ensure label is block-level */
+//     font-weight: bold !important;
+//     font-family: $text-font !important;
+//     margin-bottom: 5px !important; /* Add space between label and input field */
+// }
+
+// /* Styling for input fields */
+// .wc-block-components-form.wc-block-checkout__form input[type="text"],
+// .wc-block-components-form.wc-block-checkout__form input[type="email"],
+// .wc-block-components-form.wc-block-checkout__form input[type="tel"],
+// .wc-block-components-form.wc-block-checkout__form select {
+//     width: 100% !important; /* Full width input fields */
+//     height: auto !important; /* Let height adjust automatically */
+//     font-size: 16px !important; /* Font size */
+//     border: 1px solid #ccc !important; /* Light border */
+//     border-radius: 8px !important; /* Rounded corners */
+//     margin-bottom: 20px !important; /* Increase space below input fields */
+//     font-family: $text-font !important; /* Use the text font */
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important; /* Subtle shadow */
+//     background-color: #f9f9f9 !important; /* Light background */
+//     border: 0.5px solid #89b4ff !important; /* Border for clarity */
+// }
+
+// /* Styling for the dropdown menu */
+// .wc-block-components-form.wc-block-checkout__form select {
+//     background-color: #fff !important; /* White background */
+//     cursor: pointer !important; /* Pointer cursor on hover */
+// }
+
+// .wc-blocks-components-select__container{
+//     border: none !important;
+// }
+
+// .wc-blocks-components-select .wc-blocks-components-select__select {
+//     -moz-appearance: none;
+//     appearance: none;
+//     background: none;
+//     border-radius: 4px;
+//     color: #2b2d2f;
+//     font-family: inherit;
+//     font-size: inherit;
+//     font-size: 1em;
+//     font-style: inherit;
+//     font-weight: inherit;
+//     height: 100%;
+//     letter-spacing: inherit;
+//     line-height: inherit;
+//     padding: 1.6em .5em 0 !important;
+//     text-decoration: inherit;
+//     text-transform: inherit;
+//     border: 0.5px solid #89b4ff !important; /* Border for clarity */
+
+// }
+
+// /* Style for the checkout place order button */
+// .wc-block-components-button.wp-element-button.wc-block-components-checkout-place-order-button.wc-block-components-checkout-place-order-button--full-width.contained {
+//     background-color: #007cba !important; /* Replace with your button's default color */
+//     color: #ffffff !important; /* Replace with your button's text color */
+//     padding: 15px 30px !important; /* Adjust padding as needed */
+//     border: none!important; /* Remove any default borders */
+//     border-radius: 8px !important; /* Match your other buttons' border radius */
+//     text-align: center !important; /* Center text */
+//     font-size: 16px !important; /* Font size to match other buttons */
+//     font-family: $text-font !important; /* Match your font */
+//     transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+// }
+
+// /* Hover effects */
+// .wc-block-components-button.wp-element-button.wc-block-components-checkout-place-order-button.wc-block-components-checkout-place-order-button--full-width.contained:hover {
+//     background-color: rgb(101, 231, 101) !important;
+//     color: black !important;
+//     transform: translateY(-2px); /* Slight lift effect on hover */
+// }
+
+// /* Optional: Focus effect */
+// .wc-block-components-button.wp-element-button.wc-block-components-checkout-place-order-button.wc-block-components-checkout-place-order-button--full-width.contained:focus {
+//     outline: none; /* Remove default outline */
+//     box-shadow: 0 0 5px rgba(0, 124, 186, 0.5); /* Optional shadow effect for focus */
+// }
+
+// .wc-block-components-address-card {
+//     background-color: #f9f9f9 !important; /* Light background for contrast */
+//     border-radius: 8px !important; /* Rounded corners */
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; /* Subtle shadow for depth */
+//     padding: 15px !important; /* Padding for spacing */
+//     margin-bottom: 20px !important; /* Space below the address card */
+//     border: 1px solid #89b4ff !important; /* Optional border for clarity */
+//     font-family: $text-font !important; /* Use the text font */
+// }
+
+// /* Optional: Styling for text inside the address card */
+// .wc-block-components-address-card h2,
+// .wc-block-components-address-card h3,
+// .wc-block-components-address-card p {
+//     margin: 0 0 10px !important; /* Space below text elements */
+//     color: #333 !important; /* Darker text color */
+// }
+
+.shop_table.woocommerce-checkout-review-order-table{
+    background-color: white !important;
+    margin-left: 10% !important;
+    border: 2px solid lightblue !important;
+    width: 89% !important;
+    font-family: sans-serif !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 2% !important;
+}
+.form-row.notes{
+    background-color: white !important;
+    margin-left: 10% !important;
+    border: 2px solid lightblue !important;
+    width: 84.5% !important;
+    padding: 2% !important;
+    font-family: sans-serif !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 2% !important;
+}
+.woocommerce-additional-fields{
+    display: none !important;
 }
 
-.wp-block-woocommerce-checkout-order-summary-block {
-    background-color: #f9f9f9 !important; /* Light background for contrast */
-    padding: 10px !important; /* Reduce padding for better spacing */
-    border-radius: 8px !important; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; /* Add subtle shadow for depth */
-    margin-bottom: 2% !important; /* Space below the order summary block */
-    border: 1px solid #89b4ff !important; /* Apply blue border */
-    margin-top: 20% !important;
-}
-.is-large .wc-block-checkout__sidebar.is-sticky {
-    position: static !important; /* Change from sticky to static */
+@media only screen and (min-width: 769px) { 
+    .klarna-wrapper {
+        float: right;
+        width: 50%;
+        padding-left: 2%;
+        margin-right: 3%;
+        box-sizing: border-box;
+    }
 }
 
-.wc-block-components-order-summary-item {
-    background-color: #f9f9f9 !important; /* Light background for contrast */
-    padding: 4px !important; /* Adjust padding for better spacing */
-    border-radius: 8px !important; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; /* Add subtle shadow for depth */
-    margin-bottom: 5% !important; /* Reduce margin below each item */
-    border-bottom: 0.5px solid #89b4ff !important; /* Border for clarity */
-    border-right: 0.5px solid #89b4ff !important; /* Border for clarity */
-}
-
-// input feilds
-
-
-/* Styling the form container */
-.wc-block-components-form.wc-block-checkout__form {
-    font-family: $text-font !important; /* Apply the text font globally */
-}
-
-/* Styling for H2 and H3 elements */
-.wc-block-components-form.wc-block-checkout__form h2,
-.wc-block-components-form.wc-block-checkout__form h3 {
-    font-style: italic !important; /* Make the headings italic */
-    color: #333 !important; /* Darker heading color */
-    margin-bottom: 10px !important; /* Add spacing below headings */
-}
-
-/* Styling for labels to position them above the input fields */
-.wc-block-components-form.wc-block-checkout__form label {
-    display: block !important; /* Ensure label is block-level */
-    font-weight: bold !important;
-    font-family: $text-font !important;
-    margin-bottom: 5px !important; /* Add space between label and input field */
-}
-
-/* Styling for input fields */
-.wc-block-components-form.wc-block-checkout__form input[type="text"],
-.wc-block-components-form.wc-block-checkout__form input[type="email"],
-.wc-block-components-form.wc-block-checkout__form input[type="tel"],
-.wc-block-components-form.wc-block-checkout__form select {
-    width: 100% !important; /* Full width input fields */
-    height: auto !important; /* Let height adjust automatically */
-    font-size: 16px !important; /* Font size */
-    border: 1px solid #ccc !important; /* Light border */
-    border-radius: 8px !important; /* Rounded corners */
-    margin-bottom: 20px !important; /* Increase space below input fields */
-    font-family: $text-font !important; /* Use the text font */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important; /* Subtle shadow */
-    background-color: #f9f9f9 !important; /* Light background */
-    border: 0.5px solid #89b4ff !important; /* Border for clarity */
-}
-
-/* Styling for the dropdown menu */
-.wc-block-components-form.wc-block-checkout__form select {
-    background-color: #fff !important; /* White background */
-    cursor: pointer !important; /* Pointer cursor on hover */
-}
-
-.wc-blocks-components-select__container{
-    border: none !important;
-}
-
-.wc-blocks-components-select .wc-blocks-components-select__select {
-    -moz-appearance: none;
-    appearance: none;
-    background: none;
-    border-radius: 4px;
-    color: #2b2d2f;
-    font-family: inherit;
-    font-size: inherit;
-    font-size: 1em;
-    font-style: inherit;
-    font-weight: inherit;
-    height: 100%;
-    letter-spacing: inherit;
-    line-height: inherit;
-    padding: 1.6em .5em 0 !important;
-    text-decoration: inherit;
-    text-transform: inherit;
-    border: 0.5px solid #89b4ff !important; /* Border for clarity */
-
-}
-
-/* Style for the checkout place order button */
-.wc-block-components-button.wp-element-button.wc-block-components-checkout-place-order-button.wc-block-components-checkout-place-order-button--full-width.contained {
-    background-color: #007cba !important; /* Replace with your button's default color */
-    color: #ffffff !important; /* Replace with your button's text color */
-    padding: 15px 30px !important; /* Adjust padding as needed */
-    border: none!important; /* Remove any default borders */
-    border-radius: 8px !important; /* Match your other buttons' border radius */
-    text-align: center !important; /* Center text */
-    font-size: 16px !important; /* Font size to match other buttons */
-    font-family: $text-font !important; /* Match your font */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
-}
-
-/* Hover effects */
-.wc-block-components-button.wp-element-button.wc-block-components-checkout-place-order-button.wc-block-components-checkout-place-order-button--full-width.contained:hover {
-    background-color: rgb(101, 231, 101) !important;
-    color: black !important;
-    transform: translateY(-2px); /* Slight lift effect on hover */
-}
-
-/* Optional: Focus effect */
-.wc-block-components-button.wp-element-button.wc-block-components-checkout-place-order-button.wc-block-components-checkout-place-order-button--full-width.contained:focus {
-    outline: none; /* Remove default outline */
-    box-shadow: 0 0 5px rgba(0, 124, 186, 0.5); /* Optional shadow effect for focus */
-}
-
-.wc-block-components-address-card {
-    background-color: #f9f9f9 !important; /* Light background for contrast */
-    border-radius: 8px !important; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; /* Subtle shadow for depth */
-    padding: 15px !important; /* Padding for spacing */
-    margin-bottom: 20px !important; /* Space below the address card */
-    border: 1px solid #89b4ff !important; /* Optional border for clarity */
-    font-family: $text-font !important; /* Use the text font */
-}
-
-/* Optional: Styling for text inside the address card */
-.wc-block-components-address-card h2,
-.wc-block-components-address-card h3,
-.wc-block-components-address-card p {
-    margin: 0 0 10px !important; /* Space below text elements */
-    color: #333 !important; /* Darker text color */
+.page-template-default.page.page-id-9.logged-in.admin-bar.theme-Sweposters.woocommerce-checkout.woocommerce-page.woocommerce-js.customize-support{
+    background-color: white !important;
 }

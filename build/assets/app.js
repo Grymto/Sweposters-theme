@@ -12,3 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(`Added class onsale-${index + 1} to span.onsale element`);
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const menu = document.querySelector(".menu");
+  menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+    menuToggle.classList.toggle("active");
+  });
+});

@@ -9,56 +9,7 @@
 
 <body <?php body_class(); ?>>
 <footer>
-    <!-- <div class="content">
-        <div class="column">
-            <div class="category-title">Sweposters</div>
-            <?php wp_nav_menu(array(
-                'theme_location' => 'footer-party-pulse',
-                'menu_id' => 'footer-party-pulse',
-                'container' => 'nav',
-                'container_class' => 'menu'
-            )); ?>
-        </div>
-
-        <div class="column">
-            <div class="category-title">Information</div>
-            <?php wp_nav_menu(array(
-                'theme_location' => 'footer-information',
-                'menu_id' => 'footer-information',
-                'container' => 'nav',
-                'container_class' => 'menu'
-            )); ?>
-        </div>
-
-        <div class="column">
-            <div class="category-title">Kundservice</div>
-            <?php wp_nav_menu(array(
-                'theme_location' => 'footer-kundservice',
-                'menu_id' => 'footer-kundservice',
-                'container' => 'nav',
-                'container_class' => 'menu'
-            )); ?>
-        </div>
-        <div class="column">
-            <div class="category-title">Här finns vi </div>
-            <?php wp_nav_menu(array(
-                'theme_location' => 'footer-här-finns-vi',
-                'menu_id' => 'footer-här-finns-vi',
-                'container' => 'nav',
-                'container_class' => 'menu'
-            )); ?>
-        </div>
-        <div class="column">
-            <div class="category-title">Sociala Medier</div>
-            <?php wp_nav_menu(array(
-                'theme_location' => 'footer-sociala-medier',
-                'menu_id' => 'footer-sociala-medier',
-                'container' => 'nav',
-                'container_class' => 'menu'
-            )); ?>
-        </div>
-    </div>  -->
-
+    
     <div class="contact-info">
     <p class="contact-info">Kundservice har öppet helgfria vardagar kl 08.30-18.00 via telefon 070-000 00 00.</p>
 </div>

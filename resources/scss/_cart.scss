@@ -11,6 +11,10 @@
 .is-large.wc-block-cart .wc-block-cart-items{
     border-bottom: 2px solid #7a9bd3 !important;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08); 
+    margin-top: 10% !important;
+    margin-bottom: 10% !important;
+    background-color: beige !important;
+    font-weight: bold !important;
 }
 
 .wc-block-components-main.wc-block-cart__main.wp-block-woocommerce-cart-items-block{
@@ -40,6 +44,10 @@
     border: 2px solid #7a9bd3;
     font-family: sans-serif !important;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+    margin-top: 5% !important;
+    margin-bottom: 10% !important;
+    background-color: beige !important;
+    font-weight: bold !important;
 }
 .wc-block-components-sidebar{
     width: 25% !important;
@@ -80,11 +88,18 @@
 .wc-block-cart-items__header{
     font-weight: bold !important;
     font-size: 18px !important;
-    color: red;
+    color: black;
 }
 .tr{
     border-color: green !important;
     .wc-block-cart-items__row{
         border: 2px solid green !important;
     }
+}
+.wc-block-grid.wp-block-product-new.wc-block-product-new.has-4-columns {
+    display: none;
+}
+
+body.woocommerce-cart footer {
+    margin-top: 9.5%;
 }

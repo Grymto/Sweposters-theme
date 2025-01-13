@@ -398,6 +398,12 @@ header.header .menu a:hover {
 h1 {
   font-style: italic;
 }
+.site-main {
+  margin-bottom: -1% !important;
+}
+.wc-block-featured-product.alignnone.wp-elements-5a6304966f8fca45738071a133231208.has-text-color.has-white-color.wp-block-woocommerce-featured-product {
+  min-height: unset !important;
+}
 .woocommerce-products-header__title.page-title {
   font-size: 45px;
   font-style: italic;

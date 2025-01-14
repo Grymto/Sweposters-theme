@@ -403,6 +403,9 @@ h1 {
   max-height: 200px !important; /* Ensures the height does not exceed 200px */
   overflow: hidden; /* Prevents content from spilling out if it's too large */
 }
+.site-main {
+  margin-bottom: -1.3% !important;
+}
 .woocommerce-products-header__title.page-title {
   font-size: 45px;
   font-style: italic;
@@ -1547,7 +1550,7 @@ body.woocommerce-cart footer {
     font-size: 14px !important;
   }
   .site-main {
-    margin-bottom: -1.3% !important;
+    margin-bottom: -2% !important;
   }
   .wc-block-featured-product.alignnone.wp-elements-5a6304966f8fca45738071a133231208.has-text-color.has-white-color.wp-block-woocommerce-featured-product {
     min-height: 220px !important;

@@ -400,7 +400,7 @@ h1 {
 }
 .wc-block-featured-product {
   min-height: unset !important; /* Removes the default min-height */
-  max-height: 200px !important; /* Ensures the height does not exceed 200px */
+  max-height: 230px !important; /* Ensures the height does not exceed 200px */
   overflow: hidden; /* Prevents content from spilling out if it's too large */
 }
 .site-main {

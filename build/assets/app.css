@@ -116,8 +116,12 @@ footer .rights {
   width: 100%;
   color: #000000;
   font-family: "Poppins";
+  color: white;
+  font-weight: bold;
 }
 footer .contact-info {
+  color: white;
+  font-weight: bold;
   text-align: center;
   font-family: "Poppins";
   justify-content: center;
@@ -377,6 +381,54 @@ header.header .menu a:hover {
   position: absolute;
   left: 10px;
   top: 100px; /* Adjust based on the header height */
+}
+.has-text-align-right.text1.has-black-color.has-text-color {
+  font-size: 100px;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: -4px;
+  line-height: 0.8;
+  text-transform: none;
+}
+.has-text-align-right.text2.has-black-color.has-text-color {
+  font-size: 50px !important;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: -4px;
+  line-height: 0.8;
+  text-transform: none;
+}
+.has-text-align-left.text1.has-luminous-vivid-amber-color.has-text-color.has-large-font-size {
+  font-size: 100px !important;
+  font-style: italic !important;
+  font-weight: 800 !important;
+  letter-spacing: -4px !important;
+  line-height: 0.8 !important;
+  text-transform: none !important;
+}
+.has-text-align-left.text2.has-luminous-vivid-amber-color.has-text-color.has-large-font-size {
+  font-size: 50px !important;
+  font-style: italic !important;
+  font-weight: 800 !important;
+  letter-spacing: -4px !important;
+  line-height: 0.8 !important;
+  text-transform: none !important;
+}
+.has-text-align-left.text1.has-text-color.has-large-font-size {
+  font-size: 100px !important;
+  font-style: italic !important;
+  font-weight: 800 !important;
+  letter-spacing: -4px !important;
+  line-height: 0.8 !important;
+  text-transform: none !important;
+}
+.has-text-align-left.text2.has-text-color.has-large-font-size {
+  font-size: 50px !important;
+  font-style: italic !important;
+  font-weight: 800 !important;
+  letter-spacing: -4px !important;
+  line-height: 0.8 !important;
+  text-transform: none !important;
 }
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
@@ -844,6 +896,40 @@ ul.products li.product .button:hover {
 }
 body.single-product footer {
   width: 100%;
+}
+.wp-post-image {
+  border: 1px #66afe9 solid;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+}
+.woocommerce-product-gallery__image {
+  width: 100% !important;
+  margin-left: 1% !important;
+  margin-top: 1.5% !important;
+  border-radius: 5%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+}
+.woocommerce-product-gallery__image img {
+  border: 1px #66afe9 solid !important;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 5% !important;
+  width: 100% !important;
+  transition: opacity 0.2s ease-in-out;
+}
+.woocommerce-product-gallery__image:nth-last-of-type(-n+2) {
+  width: 25% !important;
+  margin-left: 1% !important;
+  margin-top: 1.5% !important;
+  border: 1px #66afe9 solid !important;
+  border-radius: 5%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+}
+.woocommerce-product-gallery__image.original-thumbnail {
+  width: 25% !important;
+  margin-left: 1% !important;
+  margin-top: 1.5% !important;
+  border: 1px #66afe9 solid !important;
+  border-radius: 5%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
 }
 /* Style for the product details section (Summary) */
 .single-product div.summary {
@@ -1554,6 +1640,38 @@ body.woocommerce-cart footer {
   }
   .wc-block-featured-product.alignnone.wp-elements-5a6304966f8fca45738071a133231208.has-text-color.has-white-color.wp-block-woocommerce-featured-product {
     min-height: 220px !important;
+  }
+  .has-text-align-right.text1.has-black-color.has-text-color {
+    font-size: 70px !important;
+    font-style: italic !important;
+    font-weight: 800 !important;
+    letter-spacing: -4px !important;
+    line-height: 0.8 !important;
+    text-transform: none !important;
+  }
+  .has-text-align-right.text2.has-black-color.has-text-color {
+    font-size: 30px !important;
+    font-style: italic;
+    font-weight: 800;
+    letter-spacing: -4px;
+    line-height: 0.8;
+    text-transform: none;
+  }
+  .has-text-align-left.text1.has-text-color.has-large-font-size {
+    font-size: 70px !important;
+    font-style: italic !important;
+    font-weight: 800 !important;
+    letter-spacing: -4px !important;
+    line-height: 0.8 !important;
+    text-transform: none !important;
+  }
+  .has-text-align-left.text2.has-text-color.has-large-font-size {
+    font-size: 30px !important;
+    font-style: italic !important;
+    font-weight: 800 !important;
+    letter-spacing: -4px !important;
+    line-height: 0.8 !important;
+    text-transform: none !important;
   }
 }
 body {

@@ -48,3 +48,7 @@ function conditionally_show_woocommerce_sale_flash($html, $post, $product) {
     // Annars returnera etiketten som den är
     return $html;
 }
+
+add_action('after_setup_theme', function() {
+    remove_theme_support('wc-product-gallery-lightbox');
+});

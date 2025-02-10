@@ -11,7 +11,9 @@
 <footer>
     
     <div class="contact-info">
-    <p class="contact-info">Kundservice har öppet helgfria vardagar kl 08.30-18.00 via telefon 070-000 00 00.</p>
+    <p class="contact-info"> Kundservice har öppet helgfria vardagar kl 9-17.</p>
+    <p class="contact-info"> Ni kan nå oss på mail info@sweposters.se eller telefon 046-71 22 32 </p>
+    <p class="contact-info"> Läs Sweposters<a href="https://sweposters.test/privacy-policy/">Köpvilkor</a>  </p>
 </div>
 
 

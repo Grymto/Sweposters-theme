@@ -130,9 +130,13 @@ footer {
         width: 100%;
         color: #000000;
         font-family: $text-font;
+        color: white;
+        font-weight: bold;
     }
 
     .contact-info {
+        color: white;
+        font-weight: bold;
         text-align: center;
         font-family: $text-font;
         justify-content: center;

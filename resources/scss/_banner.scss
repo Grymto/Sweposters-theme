@@ -19,6 +19,63 @@
     left: 10px;
     top: 100px; /* Adjust based on the header height */
 }
+// MC
+.has-text-align-right.text1.has-black-color.has-text-color{
+    font-size: 100px;
+    font-style: italic;
+    font-weight: 800;
+    letter-spacing: -4px;
+    line-height: 0.8;
+    text-transform: none;
+}
+
+.has-text-align-right.text2.has-black-color.has-text-color{
+    font-size: 50px !important;
+    font-style: italic;
+    font-weight: 800;
+    letter-spacing: -4px;
+    line-height: 0.8;
+    text-transform: none;
+}
+//BIL
+.has-text-align-left.text1.has-luminous-vivid-amber-color.has-text-color.has-large-font-size{
+    font-size: 100px !important;
+    font-style: italic !important;
+    font-weight: 800 !important;
+    letter-spacing: -4px !important;
+    line-height: 0.8 !important;
+    text-transform: none !important;
+}
+.has-text-align-left.text2.has-luminous-vivid-amber-color.has-text-color.has-large-font-size{
+    font-size: 50px !important;
+    font-style: italic !important;
+    font-weight: 800 !important;
+    letter-spacing: -4px !important;
+    line-height: 0.8 !important;
+    text-transform: none !important;
+}
+//Hästar / hund / katt
+.has-text-align-left.text1.has-text-color.has-large-font-size{
+    font-size: 100px !important;
+    font-style: italic !important;
+    font-weight: 800 !important;
+    letter-spacing: -4px !important;
+    line-height: 0.8 !important;
+    text-transform: none !important;
+}
+.has-text-align-left.text2.has-text-color.has-large-font-size{
+    font-size: 50px !important;
+    font-style: italic !important;
+    font-weight: 800 !important;
+    letter-spacing: -4px !important;
+    line-height: 0.8 !important;
+    text-transform: none !important;
+}
+
+
+
+
+
 
 /* Media Query for smaller screens */
 @media (max-width: 768px) {

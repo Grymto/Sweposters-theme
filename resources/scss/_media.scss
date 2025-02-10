@@ -180,4 +180,44 @@
     min-height: 220px !important;
 }
 
+
+
+
+// MC
+.has-text-align-right.text1.has-black-color.has-text-color{
+    font-size: 70px !important;
+    font-style: italic !important;
+    font-weight: 800 !important;
+    letter-spacing: -4px !important;
+    line-height: 0.8 !important;
+    text-transform: none !important;
+}
+
+.has-text-align-right.text2.has-black-color.has-text-color{
+    font-size: 30px !important;
+    font-style: italic;
+    font-weight: 800;
+    letter-spacing: -4px;
+    line-height: 0.8;
+    text-transform: none;
+}
+
+// bil / Hästar / hund / katt
+.has-text-align-left.text1.has-text-color.has-large-font-size{
+    font-size: 70px !important;
+    font-style: italic !important;
+    font-weight: 800 !important;
+    letter-spacing: -4px !important;
+    line-height: 0.8 !important;
+    text-transform: none !important;
+}
+.has-text-align-left.text2.has-text-color.has-large-font-size{
+    font-size: 30px !important;
+    font-style: italic !important;
+    font-weight: 800 !important;
+    letter-spacing: -4px !important;
+    line-height: 0.8 !important;
+    text-transform: none !important;
+}
+
 }

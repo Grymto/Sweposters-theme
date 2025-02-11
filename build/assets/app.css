@@ -1190,7 +1190,7 @@ body.single-product footer {
   text-align: center !important; /* Center text inside */
 }
 .woocommerce-Tabs-panel.woocommerce-Tabs-panel--description.panel.entry-content.wc-tab {
-  margin-bottom: 2% !important;
+  margin-bottom: 3.5% !important;
 }
 /* Styling for the Reviews Tab Panel */
 .woocommerce-Tabs-panel.woocommerce-Tabs-panel--reviews.panel.entry-content.wc-tab {
@@ -1273,7 +1273,7 @@ body.single-product footer {
   resize: vertical !important; /* Allow vertical resizing */
 }
 .woocommerce-Tabs-panel.woocommerce-Tabs-panel--reviews.panel.entry-content.wc-tab {
-  margin-bottom: 2% !important;
+  margin-bottom: 3.5% !important;
 }
 /* Centering the stars in the Reviews Tab */
 .comment-form-rating .stars {

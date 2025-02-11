@@ -9,7 +9,7 @@
     <?php wp_body_open(); ?>
     <div class="top-header">
     <h1 class="Logo">
-        <a href="http://sweposters.test/" title="Sweposters Home">Sweposters</a>
+        <a href="http://sweposters.se/" title="Sweposters Home">Sweposters</a>
     </h1>
 </div>
 

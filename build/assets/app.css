@@ -1338,7 +1338,7 @@ body.single-product footer {
   font-family: sans-serif !important;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
   border-radius: 2% !important;
-  background-color: beige !important;
+  background-color: white !important;
   font-weight: bold !important;
 }
 .form-row.notes {
@@ -1350,7 +1350,7 @@ body.single-product footer {
   font-family: sans-serif !important;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
   border-radius: 2% !important;
-  background-color: beige !important;
+  background-color: white !important;
   font-weight: bold !important;
 }
 .woocommerce-additional-fields {

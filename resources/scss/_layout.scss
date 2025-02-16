@@ -248,6 +248,69 @@ body .is-layout-flex {
 
 }
 }
+   .has-text-align-center.brödtext1{
+        width: 100% !important;
+        text-align: center !important;
+        font-size: 18px !important;
+        font-family: "Montserrat", sans-serif !important;
+        line-height: 1.5 !important;
+        text-align: center !important;
+        letter-spacing: 0.5px !important;
+        margin-bottom: 3.5% !important;
+    }
+
+
+    .wp-block-group.is-content-justification-center.is-nowrap.is-layout-flex.wp-container-core-group-is-layout-2.wp-block-group-is-layout-flex{
+    display: flex !important;
+    width: 100% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 auto !important;
+    gap: 70px !important;
+    padding: 10px !important;
+    }
+
+    .wp-block-group.is-nowrap.is-layout-flex.wp-container-core-group-is-layout-3.wp-block-group-is-layout-flex{
+        display: flex !important;
+        width: 100% !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 auto !important;
+        gap: 70px !important;
+        padding: 10px !important;
+    }
+
+    .wp-block-group.is-nowrap.is-layout-flex.wp-container-core-group-is-layout-4.wp-block-group-is-layout-flex{
+        display: flex !important;
+        width: 100% !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 auto !important;
+        gap: 35px !important;
+        padding: 10px !important;
+    }
+
+
+    .wp-image-331{
+        width: 400px !important;
+        height: auto;
+    }
+
+    .wp-image-330{
+    width: 400px !important;
+    height: auto;
+    }
+
+    .wp-image-338{
+    width: 400px !important;
+    height: auto;
+    }
+
+    .wc-block-featured-product__price{
+        display: none !important;
+    }
+
+
 
 
 

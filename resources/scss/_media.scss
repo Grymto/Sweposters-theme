@@ -179,6 +179,9 @@
   .wc-block-featured-product.alignnone.wp-elements-5a6304966f8fca45738071a133231208.has-text-color.has-white-color.wp-block-woocommerce-featured-product{
     min-height: 220px !important;
 }
+.wc-block-featured-product__price{
+    display: none !important;
+}
 
 
 
@@ -219,5 +222,64 @@
     line-height: 0.8 !important;
     text-transform: none !important;
 }
+  .has-text-align-center.brödtext1{
+    width: 60% !important;
+    text-align: center !important;
+    font-size: 12px !important;
+    font-family: "Montserrat", sans-serif !important;
+    letter-spacing: 0.5px !important;
+    margin-bottom: 12% !important;
+    margin-left: 20% !important;
+    font-weight: bold !important;
+}
 
+.wp-block-group.is-nowrap.is-layout-flex {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.wp-block-group.is-nowrap.is-layout-flex img {
+    order: -1; /* Moves all images to the top */
+}
+
+.wp-block-group.is-nowrap.is-layout-flex p {
+    order: 1; /* Moves all text elements to the bottom */
+}
+
+
+// bild gap på mobil view
+.wp-block-group.is-content-justification-center.is-nowrap.is-layout-flex.wp-container-core-group-is-layout-2.wp-block-group-is-layout-flex{
+    display: flex !important;
+    width: 100% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 auto !important;
+    gap: 0px !important;
+    padding: 10px !important;
+    }
+
+    .wp-block-group.is-nowrap.is-layout-flex.wp-container-core-group-is-layout-3.wp-block-group-is-layout-flex{
+        display: flex !important;
+        width: 100% !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 auto !important;
+        gap: 0px !important;
+        padding: 10px !important;
+    }
+
+    .wp-block-group.is-nowrap.is-layout-flex.wp-container-core-group-is-layout-4.wp-block-group-is-layout-flex{
+        display: flex !important;
+        width: 100% !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 auto !important;
+        gap: 0px !important;
+        padding: 10px !important;
+    }
+
+    .wp-image-336{
+        width: 300px !important;
+        height: auto !important;
+    }
 }

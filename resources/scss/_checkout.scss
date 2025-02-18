@@ -165,6 +165,7 @@
     border-radius: 2% !important;
     background-color: white !important;
     font-weight: bold !important;
+    text-align: center !important;
 }
 .woocommerce-additional-fields{
     display: none !important;
@@ -183,3 +184,9 @@
 .page-template-default.page.page-id-9.logged-in.admin-bar.theme-Sweposters.woocommerce-checkout.woocommerce-page.woocommerce-js.customize-support{
     background-color: white !important;
 }
+.woocommerce table.shop_table{
+    text-align: center !important;
+  }
+  .woocommerce td.product-name dl.variation{
+    display: none !important;
+  }

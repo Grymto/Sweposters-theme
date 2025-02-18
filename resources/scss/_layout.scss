@@ -310,11 +310,8 @@ body .is-layout-flex {
         display: none !important;
     }
 
-
-
-
-
-
-
-
-
+    .wp-block-separator.has-alpha-channel-opacity {
+        width: 45% !important;
+        color: #7a9bd3;
+        margin-bottom: 3%;
+    }

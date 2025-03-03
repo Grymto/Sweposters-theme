@@ -220,14 +220,20 @@ body .is-layout-flex {
 
 // Lagt till i varukorg meddelande
 
-.woocommerce-message{
-    border: 3px solid lightgreen !important;
-    border-radius: 1% !important;
-    background-color: yellow !important;
-    box-shadow: 0 3px 6px lightgreen;
-    font-family: sans-serif !important;
-    font-size: 13.5px !important;
-    font-weight: bold !important;
+.woocommerce-message {
+    border: 2px solid #4CAF50 !important; // A cleaner green border
+    border-radius: 6px !important; // Smoother rounded corners
+    background-color: #f0fff4 !important; // Light greenish background for a soft look
+    box-shadow: 0 2px 4px rgba(76, 175, 80, 0.3); // Subtle shadow effect
+    font-family: 'Arial', sans-serif !important; // A more modern font
+    font-size: 14px !important; // Slightly adjusted for readability
+    font-weight: 600 !important; // Medium boldness for a clean look
+    color: #2d6a2d !important; // Dark green text for contrast
+    width: 40% !important; // Reduced width to make it smaller
+    padding: 10px 15px !important; // Better spacing
+    margin: 10px auto !important; // Centered positioning
+    text-align: center !important; // Align text properly
+
 
                 .button.wc-forward{
                     color: black;

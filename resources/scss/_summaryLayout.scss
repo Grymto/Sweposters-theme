@@ -33,3 +33,7 @@ p.price{
 .wpo-image-wrap{  
      height: 86% !important;
 }
+
+.wpo-image-active{
+    border: 5px solid var(--wpo-input-focus-color);
+}

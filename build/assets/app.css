@@ -634,13 +634,18 @@ body .is-layout-flex {
   border: 1px solid #7a9bd3;
 }
 .woocommerce-message {
-  border: 3px solid lightgreen !important;
-  border-radius: 1% !important;
-  background-color: yellow !important;
-  box-shadow: 0 3px 6px lightgreen;
-  font-family: sans-serif !important;
-  font-size: 13.5px !important;
-  font-weight: bold !important;
+  border: 2px solid #4CAF50 !important;
+  border-radius: 6px !important;
+  background-color: #f0fff4 !important;
+  box-shadow: 0 2px 4px rgba(76, 175, 80, 0.3);
+  font-family: "Arial", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #2d6a2d !important;
+  width: 40% !important;
+  padding: 10px 15px !important;
+  margin: 10px auto !important;
+  text-align: center !important;
 }
 .woocommerce-message .button.wc-forward {
   color: black;
@@ -1464,6 +1469,9 @@ p.price {
 .wpo-image-wrap {
   height: 86% !important;
 }
+.wpo-image-active {
+  border: 5px solid var(--wpo-input-focus-color);
+}
 .page-template-default.page.page-id-8.logged-in.admin-bar.theme-Sweposters.woocommerce-cart.woocommerce-page.woocommerce-js.customize-support {
   background-color: white;
 }
@@ -1556,6 +1564,18 @@ p.price {
 }
 body.woocommerce-cart footer {
   margin-top: 9.5%;
+}
+.wc-block-components-product-details__1-v-lj-storlek-p-f-rdig-poster-tavla {
+  display: none !important;
+}
+.wc-block-components-product-details__file-upload {
+  display: none !important;
+}
+.wc-block-components-product-details__4-v-lj-st-ende-eller-liggande-f-rdig-poster-tavla {
+  display: none !important;
+}
+.wc-block-components-product-details__5-vit-border-runt-bild {
+  display: none !important;
 }
 @media (max-width: 479px) {
   body {
@@ -1665,12 +1685,6 @@ body.woocommerce-cart footer {
     width: unset !important;
     margin-left: unset !important;
     font-family: sans-serif !important;
-  }
-  .wc-block-components-product-metadata {
-    display: none !important;
-  }
-  .wc-block-components-quantity-selector:nth-child(1) {
-    display: none;
   }
   /* Checkout */
   .shop_table.woocommerce-checkout-review-order-table {
@@ -1819,6 +1833,46 @@ body.woocommerce-cart footer {
     color: #7a9bd3;
     margin-bottom: 10%;
   }
+}
+.woocommerce-order {
+  font-family: sans-serif !important;
+}
+.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received {
+  text-align: center !important;
+}
+.woocommerce-order-overview.woocommerce-thankyou-order-details.order_details {
+  margin-left: 30% !important;
+}
+.woocommerce-order-details__title {
+  text-align: center !important;
+}
+.woocommerce-table__product-name.product-name {
+  display: flex !important;
+  align-items: center !important;
+  text-align: center !important;
+  margin-left: 25% !important;
+}
+.woocommerce-table__product-name.product-name a {
+  display: none !important;
+}
+.product-quantity {
+  display: none !important;
+}
+.woocommerce-column__title {
+  text-align: center !important;
+}
+.woocommerce-order-details {
+  margin-bottom: 2em !important;
+  width: 50% !important;
+  margin-left: 25% !important;
+}
+.woocommerce .woocommerce-customer-details address {
+  text-align: center !important;
+  border: none !important;
+}
+.woocommerce-columns.woocommerce-columns--2.woocommerce-columns--addresses.col2-set.addresses {
+  width: 50% !important;
+  margin-left: 28% !important;
 }
 body {
   background-color: rgb(234, 234, 234);

@@ -48,3 +48,7 @@ function conditionally_show_woocommerce_sale_flash($html, $post, $product) {
     // Annars returnera etiketten som den är
     return $html;
 }
+
+add_filter('woocommerce_add_to_cart_redirect', function() {
+    return wc_get_checkout_url(); // Redirect to checkout page after adding to cart
+});

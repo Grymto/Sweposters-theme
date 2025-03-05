@@ -52,3 +52,28 @@ function conditionally_show_woocommerce_sale_flash($html, $post, $product) {
 add_filter('woocommerce_add_to_cart_redirect', function() {
     return wc_get_checkout_url(); // Redirect to checkout page after adding to cart
 });
+
+
+add_filter( 'woocommerce_package_rates', 'hide_flat_rate_if_free_shipping_available', 10, 2 );
+function hide_flat_rate_if_free_shipping_available( $rates, $package ) {
+    $free_shipping_available = false;
+
+    // Check if free shipping exists
+    foreach ( $rates as $rate_id => $rate ) {
+        if ( strpos( $rate_id, 'free_shipping' ) !== false ) {
+            $free_shipping_available = true;
+            break;
+        }
+    }
+
+    // Only remove flat rate if free shipping is available
+    if ( $free_shipping_available ) {
+        foreach ( $rates as $rate_id => $rate ) {
+            if ( strpos( $rate_id, 'flat_rate' ) !== false ) {
+                unset( $rates[$rate_id] );
+            }
+        }
+    }
+
+    return !empty($rates) ? $rates : [];
+}

@@ -1863,6 +1863,9 @@ body.woocommerce-cart footer {
   .wp-block-separator.has-alpha-channel-opacity {
     display: none;
   }
+  .simple-banner {
+    top: 0px !important;
+  }
 }
 .woocommerce-order {
   font-family: sans-serif !important;

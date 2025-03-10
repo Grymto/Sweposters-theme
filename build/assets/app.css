@@ -1864,7 +1864,7 @@ body.woocommerce-cart footer {
     display: none;
   }
   .simple-banner {
-    top: 0px !important;
+    top: 96px !important;
   }
 }
 .woocommerce-order {

@@ -1857,6 +1857,12 @@ body.woocommerce-cart footer {
   .woocommerce-order-overview.woocommerce-thankyou-order-details.order_details {
     margin-left: 0% !important;
   }
+  .has-text-align-center.brödtext1 {
+    display: none;
+  }
+  .wp-block-separator.has-alpha-channel-opacity {
+    display: none;
+  }
 }
 .woocommerce-order {
   font-family: sans-serif !important;

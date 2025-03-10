@@ -139,11 +139,11 @@ footer .contact-info {
   width: 100%;
   z-index: 9999;
   position: fixed;
-  top: 32px; /* Account for admin bar */
+  top: 0px; /* Account for admin bar */
 }
 header.header {
   position: fixed;
-  top: calc(5rem + 32px); /* Adjusts for top-header and admin bar */
+  top: calc(5rem + 0px); /* Adjusts for top-header and admin bar */
   left: 0;
   width: 100%;
   z-index: 9998;
@@ -1897,7 +1897,7 @@ body.woocommerce-cart footer {
 body {
   background-color: rgb(234, 234, 234);
   overflow-x: visible;
-  padding-top: calc(4.2rem + 77px) !important; /* Adjust this to match the combined height of your top-header and header */
+  padding-top: calc(4.2rem + 0px) !important; /* Adjust this to match the combined height of your top-header and header */
   width: 100%;
   margin: 0 auto;
   padding: 0;

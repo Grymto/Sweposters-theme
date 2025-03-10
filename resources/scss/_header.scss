@@ -1,4 +1,5 @@
 
+// top: 32px;
 .top-header {
   background-color: #0693e3;
   display: flex;
@@ -10,12 +11,14 @@
   width: 100%;
   z-index: 9999;
   position: fixed;
-  top: 32px;  /* Account for admin bar */
+  top: 0px;  /* Account for admin bar */
 }
 
+
+// top: calc(5rem + 32px);
 header.header {
   position: fixed;
-  top: calc(5rem + 32px);  /* Adjusts for top-header and admin bar */
+  top: calc(5rem + 0px);  /* Adjusts for top-header and admin bar */
   left: 0;
   width: 100%;
   z-index: 9998;
